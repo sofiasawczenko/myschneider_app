@@ -1,0 +1,18 @@
+.customHeadFontSize{
+    font-size: 26px;
+    font-family: Varela Round, Sans-serif;
+}
+.customBodyFontSize{
+    font-size: 18px;
+    text-align: justify;
+    font-family: Varela Round, Sans-serif;
+}
+.customBGC{
+    background-color: #F9F9F9;
+}
+.customSectionBGC{
+    background-color: white;
+}
+.customMargin{
+    margin-left: 131px;
+}
