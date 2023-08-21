@@ -90,3 +90,32 @@
 .textbuttonorigin:hover{
   color: #3DCD58; 
 }
+
+#calendar{
+  border: 2px solid #E0DFDC; 
+  height: 20%;
+}
+
+#calendarimg{
+  width: 300px; 
+  height: 300px;
+}
+
+#containerabout{
+  width: 60%; 
+  height: 180px; border: 2px solid #E0DFDC; 
+  margin-top: 10px;
+}
+
+#containerposts{
+  width: 60%; 
+  height: 629px; 
+  border: 2px solid #E0DFDC; 
+  margin-top: 10px;
+}
+
+#rowposts{
+  display: flex; 
+  flex-direction: row; 
+  justify-content: space-around;
+}
