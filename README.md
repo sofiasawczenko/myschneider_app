@@ -2,7 +2,7 @@
 
 Apresentamos o nosso website MySchneider.
 
-Website: http://visionary-scone-966c75.netlify.app
+http://visionary-scone-966c75.netlify.app
 
 ### Como instalar o projeto
 
