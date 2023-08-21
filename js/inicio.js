@@ -128,15 +128,21 @@ const DOM = {
 
       <hr class="divider">
       <div class="ms-2 d-flex gap-5">
-        <div class="icons me-1">
+        <div class="icons me-1"
+        role="button"
+        onclick="alert('WIP: WORK IN PROGRESS')">
           <img class="img-fluid" src="img/like-icon.svg" alt="curtir postagem">
           <small>Gostei</small>
         </div>
-        <div class="icons me-2">
+        <div class="icons me-2"
+        role="button"
+        onclick="alert('WIP: WORK IN PROGRESS')">
           <img class="img-fluid" src="img/comment-icon.svg" alt="comentar na postagem">
           <small>Comentar</small>
         </div>
-        <div class="icons mx-2">
+        <div class="icons mx-2"
+        role="button"
+        onclick="alert('WIP: WORK IN PROGRESS')">
           <img class="img-fluid" src="img/share-icon.svg" alt="compartilhar postagem">
           <small>Compartilhar</small>
         </div>
