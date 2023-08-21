@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/inicio.css" />
+    <link rel="stylesheet" href="css/shared-items.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <title>Sobre o Projeto</title>
+  </head>
+  <body class="bg-light">
+    <!----------------------------------------------- nav bar --------------------------------------------------------------->
+    <nav>
+      <div class="d-flex justify-content-evenly">
+        <img src="img/schneider-logo.svg" alt="logo da schneider" />
+
+        <div class="d-flex align-items-center">
+          <input
+            type="text"
+            class="form-control bg-light"
+            placeholder="Pesquise por pessoas, desafios, assuntos & outros"
+            aria-label="Example text with button addon"
+            aria-describedby="button-addon1"
+            style="width: 30vw"
+          />
+          <button
+            class="btn btn-secondary btn-outline"
+            type="button"
+            id="button-addon1"
+          >
+            <img src="img/search-button-icon.svg" alt="pesquisar" />
+          </button>
+        </div>
+        <div class="d-flex align-items-center gap-5">
+          <img src="img/message-icon.svg" alt="messagens" />
+          <img src="img/notification-icon.svg" alt="notificações" />
+        </div>
+        <div class="d-flex align-items-center">
+          <img src="img/joana-photo.svg" alt="foto de perfil" />
+          <p class="pt-3">Joana Ramos</p>
+        </div>
+      </div>
+      <ul class="nav-bar-items">
+        <li><a href="inicio.html">Inicio</a></li>
+        <li><a href="">Ranking</a></li>
+        <li><a href="">Fórum</a></li>
+        <li><a href="">Perfil</a></li>
+        <li class="active"><a href="index.html">Sobre o Projeto</a></li>
+      </ul>
+    </nav>
+    <!----------------------------------------------- nav bar --------------------------------------------------------------->
+
+    <main
+      class="d-flex flex-column gap-3 justify-content-center align-items-center"
+    >
+      <div class="d-flex align-items-center justify-content-center">
+        <img src="img/fiap-camp-image.svg" alt="campos da fiap" />
+      </div>
+
+      <div
+        class="bg-white d-flex align-items-center justify-content-center flex-column border gap-3 py-4"
+        style="width: 75%; height: 80vh"
+      >
+        <p class="h1">Sobre a Plataforma</p>
+        <iframe
+          src="https://www.youtube.com/embed/T9B9ysMakFo"
+          title="YouTube video player"
+          style="width: 80%; height: 100%"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+
+      <div
+        class="bg-white border d-flex flex-column gap-5 py-3 px-5 align-items-center"
+        style="width: 75%"
+      >
+        <h1>Sobre nós</h1>
+
+        <p>
+          Nós somos a equipe mySchneider da FIAP, composta por Leandro
+          Cavallari, João Belluzo, Sofia Sawczenko, Gabriel Tavares e Breno
+          Perrotti. Como estudantes apaixonados por tecnologia, unimos nossas
+          habilidades para desenvolver uma rede social completa para a Schneider
+          Electric. Ao combinar expertise em design, arquitetura de software,
+          experiência do usuário e desenvolvimento frontend, criamos a
+          plataforma "MySchneider". Nosso compromisso com a excelência e
+          inovação nos motiva a continuar gerando soluções impactantes e com
+          valor aos nossos clientes.
+        </p>
+      </div>
+
+      <div
+        class="bg-white border d-flex flex-column gap-2 py-3 px-5 align-items-center"
+        style="width: 75%"
+      >
+        <h1>Sobre o Projeto</h1>
+        <div>
+          <div
+            class="p-3 d-flex flex-column justify-content-center align-items-center gap-2"
+          >
+            <p>
+              O projeto mySchneider foi construído utilizando HTML + Javascript,
+              sem a utilização de frameworks ou bibliotecas adicionais.<br />
+              A estilização foi realizada com uma junção de Bootstrap v5.3 +
+              CSS.<br />
+              As escolhas de design foram tomadas de modo a priorizar a
+              USABILIDADE e INTUITIVIDADE do sistema.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="bg-white border d-flex flex-column gap-2 py-3 px-5 align-items-center"
+        style="width: 75%"
+      >
+        <h2>Quem somos?</h2>
+        <div>
+          <p class="customBodyFontSize">
+            A mySchneider foi desenvolvida por um grupo de 5 desenvolvedores
+            estudantes da FIAP, cujas participações na idealização e realização
+            do projeto foram comparativamente equivalentes:
+          </p>
+          <p class="customBodyFontSize">
+            Breno: Responsável pela codificação da tela "Ranking" e pela pós
+            produção do video pitch
+          </p>
+          <p class="customBodyFontSize">
+            Gabriel: Responsável pela roteirização do video pitch e pela
+            codificação da página "Sobre o Projeto"
+          </p>
+          <p class="customBodyFontSize">
+            João: Responsável pela codificação da páginas de login e "Fórum"
+          </p>
+          <p class="customBodyFontSize">
+            Leandro: Responsável pela codificação da página "Inicio" e direção
+            de projeto
+          </p>
+          <p class="customBodyFontSize">
+            Sofia: Responsável pela codificação da página "Perfil" e realização
+            do protótipo no Figma
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <!------------------------------------------- FOOTER ------------------------------------------>
+    <footer class="bg-white d-flex flex-column align-items-center justify-content-center py-4 mt-5">
+      <img src="img/myschneider-logo-footer.svg" alt="logo mySchneider">
+      
+      <hr class="divider">
+      <p>© 2023 MySchneider | All Rights Reserved</p>
+    </footer>
+  </body>
+</html>
