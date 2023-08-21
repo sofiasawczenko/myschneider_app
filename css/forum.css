@@ -1,0 +1,16 @@
+.carousel-inner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.carousel-item {
+    display: block;
+    width: 259px;
+    overflow: hidden;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+}

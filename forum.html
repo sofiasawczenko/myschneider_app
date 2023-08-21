@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schneider Login</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/shared-items.css" />
+    <link rel="stylesheet" href="css/forum.css" />
+    <link rel="stylesheet" href="css/inicio.css" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="../css/my/plus.css">
+</head>
+
+<body>
+    <div class="overflow-hidden">
+        <!----------------------------------------------- nav bar --------------------------------------------------------------->
+        <nav>
+            <div class="d-flex justify-content-evenly">
+                <img src="img/schneider-logo.svg" alt="logo da schneider" />
+
+                <div class="d-flex align-items-center">
+                    <input type="text" class="form-control bg-light"
+                        placeholder="Pesquise por pessoas, desafios, assuntos & outros"
+                        aria-label="Example text with button addon" aria-describedby="button-addon1"
+                        style="width: 30vw" />
+                    <button class="btn btn-secondary btn-outline" type="button" id="button-addon1">
+                        <img src="img/search-button-icon.svg" alt="pesquisar" />
+                    </button>
+                </div>
+                <div class="d-flex align-items-center gap-5">
+                    <img src="img/message-icon.svg" alt="messagens" />
+                    <img src="img/notification-icon.svg" alt="notificações" />
+                </div>
+                <div class="d-flex align-items-center">
+                    <img src="img/joana-photo.svg" alt="foto de perfil" />
+                    <p class="pt-3">Joana Ramos</p>
+                    <a class="icons mx-2" href="login.html" style="width: 25px; height: 20px;">
+                        <img class="img-fluid" src="img/share-icon.svg" alt="compartilhar postagem" />
+                    </a>
+                </div>
+            </div>
+            <ul class="nav-bar-items">
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="rank.html">Ranking</a></li>
+                <li class="active"><a href="forum.html">Fórum</a></li>
+                <li><a href="perfil.html">Perfil</a></li>
+                <li><a href="index.html">Sobre o Projeto</a></li>
+            </ul>
+        </nav>
+        <!----------------------------------------------- nav bar --------------------------------------------------------------->
+
+        <!--Start Carousel-->
+        <header class="row">
+            <div class="col-md-12">
+                <div class="carousel slide multi-item-carousel" id="theCarousel">
+                    <div class="carousel-inner">
+                        <!--Item Carousel 1-->
+                        <div class="item active">
+                            <div class="col-xs-4"><a href="#1"><img src="img/agro.jpg"
+                                        style="max-width: 300px; max-height: 300px;"></a>
+                            </div>
+                        </div>
+                        <!-- End Item Carousel 1-->
+
+                        <!--Item Carousel 2-->
+                        <div class="item">
+                            <div class="col-xs-4"><a href="#1"><img src="img/agro.jpg"
+                                        style="max-width: 300px; max-height: 300px;"></a>
+                            </div>
+                        </div>
+                        <!-- End Item Carousel 2-->
+
+                        <!--Item Carousel 3-->
+                        <div class="item">
+                            <div class="col-xs-4"><a href="#1"><img src="img/agro.jpg"
+                                        style="max-width: 300px; max-height: 300px;"></a>
+                            </div>
+                        </div>
+                        <!-- End Item Carousel 3-->
+
+                        <!--Item Carousel 4-->
+                        <div class="item">
+                            <div class="col-xs-4"><a href="#1"><img src="img/agro.jpg"
+                                        style="max-width: 300px; max-height: 300px;"></a>
+                            </div>
+                        </div>
+                        <!-- End Item Carousel 4-->
+
+                        <!--Item Carousel 5-->
+                        <div class="item">
+                            <div class="col-xs-4"><a href="#1"><img src="img/agro.jpg"
+                                        style="max-width: 300px; max-height: 300px;"></a>
+                            </div>
+                        </div>
+                        <!-- End Item Carousel 5-->
+
+                        <!--Item Carousel 6-->
+                        <div class="item">
+                            <div class="col-xs-4"><a href="#1"><img src="img/agro.jpg"
+                                        style="max-width: 300px; max-height: 300px;"></a>
+                            </div>
+                        </div>
+                        <!-- End Item Carousel 6-->
+
+                        <!--Item Carousel 7-->
+                        <div class="item">
+                            <div class="col-xs-4"><a href="#1"><img src="img/agro.jpg"
+                                        style="max-width: 300px; max-height: 300px;"></a>
+                            </div>
+                        </div>
+                        <!-- End Item Carousel -->
+                    </div>
+
+                    <!-- Button Carousel -->
+                    <a class="carousel-control-prev " href="#theCarousel" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#theCarousel" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </a>
+                    <!-- End Button Carousel -->
+                </div>
+            </div>
+        </header>
+        <!--End Start Carousel-->
+        <div class="border mt-4" style="border-width: 0.5px; border-color: #C7C7C7;"></div>
+        <!--End Line-->
+        <main>
+            <div class="container mt-3 justify-content-center">
+                <div class="row justify-content-center">
+                    <!-- Start Post -->
+                    <div class="col-6 d-flex flex-column gap-3 mt-5" id="publish-container" style="width: 50%;">
+                        <div class="d-flex bg-white border px-lg-5 py-lg-5 gap-4 rounded">
+                            <img src="/img/joana-photo.svg" alt="foto de perfil" />
+                            <div class="d-flex flex-column w-100">
+                                <textarea id="owner-publish" class="text-area"
+                                    placeholder="Faça uma pergunta aqui (Para conseguir uma ótima resposta, descreva sua dúvida de forma simples e clara)"></textarea>
+                                <div class="invalid-feedback">
+                                    Por favor, preencha este campo.
+                                </div>
+                                <select class="form-select form-select-sm w-25 mt-2" aria-label="Small select example">
+                                    <option selected>Categoria</option>
+                                    <option value="1">Agro</option>
+                                    <option value="2">Animais</option>
+                                    <option value="3">Tecnologia</option>
+                                </select>
+                                <button type="button" class="btn btn-primary btn-sm w-25 mt-2">Fazer pergunta</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Post -->
+                    <!-- Start Metric -->
+                    <div class="col-6">
+                        <div class="row">
+                            <div class="col d-flex flex-column align-items-center">
+                                <p>Métricas</p>
+                                <div class="container" style="width: 50%;">
+                                    <div class="row">
+                                        <div class="col">
+                                            <img src="img/mock.png" class="img-fluid rounded mb-lg-5" alt="random image"
+                                                role="button" onclick="alert('WIP: WORK IN PROGRESS')"
+                                                title="Postagem em destaque" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Metric -->
+                </div>
+            </div>
+            <!--Start Line-->
+            <div class="border" style="border-width: 0.5px; border-color: #C7C7C7;"></div>
+            <!--End Line-->
+
+            <!--Start Post 1 -->
+            <div class="container row mt-3 justify-content-center" style="margin-left: 60px;">
+                <div class="col">
+                    <div class="bg-white p-4 border w-100">
+                        <div class="d-flex flex-column gap-2">
+                            <div class="d-flex justify-content-between">
+                                <span class="d-flex align-items-center gap-4">
+                                    <img src="img/joana-photo.svg" alt="foto de perfil" />
+                                    <span class="d-flex flex-column">
+                                        <p style="margin-bottom: -0.1rem">Joana Ramos</p>
+                                        <small class="text-secondary">
+                                            Product Owner</small>
+                                    </span>
+                                </span>
+
+                                <p class="text-primary text-end fs-6">
+                                    <img src="img/check-arrow.svg" alt="seta de seguindo perfil" />
+                                    Seguindo
+                                </p>
+                            </div>
+
+                            <div>
+                                <p>
+                                    Como enjagar um time a promover e vivenciar a sustentabilidade?
+                                </p>
+                            </div>
+
+                            <hr class="divider" />
+                            <div class="ms-2 d-flex gap-5">
+                                <div class="icons me-1" role="button" onclick="alert('WIP: WORK IN PROGRESS')">
+                                    <img class="img-fluid" src="img/like-icon.svg" alt="curtir postagem" />
+                                    <small>Gostei</small>
+                                </div>
+                                <div class="icons me-2" role="button" onclick="alert('WIP: WORK IN PROGRESS')">
+                                    <img class="img-fluid" src="img/comment-icon.svg" alt="comentar na postagem" />
+                                    <small>Comentar</small>
+                                </div>
+                                <div class="icons mx-2" role="button" onclick="alert('WIP: WORK IN PROGRESS')">
+                                    <img class="img-fluid" src="img/share-icon.svg" alt="compartilhar postagem" />
+                                    <small>Compartilhar</small>
+                                </div>
+                                <div class="icons mx-2" role="button" onclick="alert('WIP: WORK IN PROGRESS')">
+                                    <img class="img-fluid" src="img/send-icon.svg" alt="compartilhar postagem" />
+                                    <small>Enviar</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Start Post 1 -->
+
+                    <!--Start Post 2 -->
+                    <div class="bg-white p-4 border w-100 mt-3">
+                        <div class="d-flex flex-column gap-2">
+                            <div class="d-flex justify-content-between">
+                                <span class="d-flex align-items-center gap-4">
+                                    <img src="img/andre-photo.svg" alt="foto de perfil" />
+                                    <span class="d-flex flex-column">
+                                        <p style="margin-bottom: -0.1rem">André Nogueira</p>
+                                        <small class="text-secondary">
+                                            Analista de qualidade</small>
+                                    </span>
+                                </span>
+
+                                <p class="text-primary text-end fs-6">
+                                    <img src="img/check-arrow.svg" alt="seta de seguindo perfil" />
+                                    Seguindo
+                                </p>
+                            </div>
+
+                            <div>
+                                <p>
+                                    Sugestões em como reduzir o uso de plástico nos escritórios?
+                                </p>
+                            </div>
+
+                            <hr class="divider" />
+                            <div class="ms-2 d-flex gap-5">
+                                <div class="icons me-1" role="button" onclick="alert('WIP: WORK IN PROGRESS')">
+                                    <img class="img-fluid" src="img/like-icon.svg" alt="curtir postagem" />
+                                    <small>Gostei</small>
+                                </div>
+                                <div class="icons me-2" role="button" onclick="alert('WIP: WORK IN PROGRESS')">
+                                    <img class="img-fluid" src="img/comment-icon.svg" alt="comentar na postagem" />
+                                    <small>Comentar</small>
+                                </div>
+                                <div class="icons mx-2" role="button" onclick="alert('WIP: WORK IN PROGRESS')">
+                                    <img class="img-fluid" src="img/share-icon.svg" alt="compartilhar postagem" />
+                                    <small>Compartilhar</small>
+                                </div>
+                                <div class="icons mx-2" role="button" onclick="alert('WIP: WORK IN PROGRESS')">
+                                    <img class="img-fluid" src="img/send-icon.svg" alt="compartilhar postagem" />
+                                    <small>Enviar</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Post 2 -->
+
+                    <!--Start Post 3 -->
+                    <div class="bg-white p-4 border w-100 mt-3">
+                        <div class="d-flex flex-column gap-2">
+                            <div class="d-flex justify-content-between">
+                                <span class="d-flex align-items-center gap-4">
+                                    <img src="img/fabiana-photo.svg" alt="foto de perfil" />
+                                    <span class="d-flex flex-column">
+                                        <p style="margin-bottom: -0.1rem">Fabiana Vasconcelos</p>
+                                        <small class="text-secondary">
+                                            Engenheira Eletrica</small>
+                                    </span>
+                                </span>
+
+                                <p class="text-primary text-end fs-6">
+                                    <img src="img/check-arrow.svg" alt="seta de seguindo perfil" />
+                                    Seguindo
+                                </p>
+                            </div>
+
+                            <div>
+                                <p>
+                                    Como diminuir a mudança climática com pequenas atitudes?
+                                </p>
+                            </div>
+
+                            <hr class="divider" />
+                            <div class="ms-2 d-flex gap-5">
+                                <div class="icons me-1" role="button" onclick="alert('WIP: WORK IN PROGRESS')">
+                                    <img class="img-fluid" src="img/like-icon.svg" alt="curtir postagem" />
+                                    <small>Gostei</small>
+                                </div>
+                                <div class="icons me-2" role="button" onclick="alert('WIP: WORK IN PROGRESS')">
+                                    <img class="img-fluid" src="img/comment-icon.svg" alt="comentar na postagem" />
+                                    <small>Comentar</small>
+                                </div>
+                                <div class="icons mx-2" role="button" onclick="alert('WIP: WORK IN PROGRESS')">
+                                    <img class="img-fluid" src="img/share-icon.svg" alt="compartilhar postagem" />
+                                    <small>Compartilhar</small>
+                                </div>
+                                <div class="icons mx-2" role="button" onclick="alert('WIP: WORK IN PROGRESS')">
+                                    <img class="img-fluid" src="img/send-icon.svg" alt="compartilhar postagem" />
+                                    <small>Enviar</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--End Post 3 -->
+
+                <!-- Start Foruns and Engajados -->
+                <div class="col-6">
+                    <div class="row" style="margin-left: 25px;">
+                        <div class="col d-flex flex-column align-items-center">
+                            <p>Foruns Populares</p>
+                            <div class="container" style="width: 50%;">
+                                <div class="row">
+                                    <div class="col">
+                                        <img src="img/mock2.jpg" class="img-fluid rounded mb-lg-5" alt="random image"
+                                            role="button" onclick="alert('WIP: WORK IN PROGRESS')"
+                                            title="Postagem em destaque" />
+                                    </div>
+                                </div>
+                            </div>
+                            <p>Mais engajados no Fórum</p>
+                            <div class="container" style="width: 50%;">
+                                <div class="row">
+                                    <div class="col">
+                                        <img src="img/mock3.svg" class="img-fluid rounded mb-lg-5" alt="random image"
+                                            role="button" onclick="alert('WIP: WORK IN PROGRESS')"
+                                            title="Postagem em destaque" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Foruns and Engajados -->
+            </div>
+    </div>
+    <!--End Post-->
+    </main>
+    <!-- Start Footer -->
+    <footer class="bg-white d-flex flex-column align-items-center justify-content-center py-4 mt-5">
+        <img src="img/myschneider-logo-footer.svg" alt="logo mySchneider">
+
+        <hr class="divider">
+        <p>© 2023 MySchneider | All Rights Reserved</p>
+    </footer>
+    <!-- End Footer -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
