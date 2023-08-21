@@ -1,25 +1,109 @@
-.perfil,
-.perfil * {
+.nav-bar-items{ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 2rem;
+}
+
+.nav-bar-items li {
+  list-style: none;
+  padding: 1rem 0;
+}
+
+.nav-bar-items li a{
+  padding: 1rem;
+  text-decoration: none;
+  color:#535353
+}
+
+.nav-bar-items li:hover {
+  cursor: pointer;
+  background-color: #F1F1F1;
+}
+
+.active {
+  background-color: #F1F1F1;
+  border-bottom: 3px solid #3DCD58;
+}
+
+* {
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
-.perfil {
-  background: #f9f9f9;
-  width: 1280px;
-  height: 1764px;
-  position: relative;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  overflow: hidden;
+
+body {
+  background-color: #f9f9f9;
 }
-.selected-text-header {
+
+
+.bg-light-gray {
+  background-color: #f1f1f1;
+}
+
+.text-color-green-xp {
+  color: #3DCD58
+}
+
+.text-area {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: vertical;
+  overflow: auto;
+}
+
+.text-area:focus {
+  outline: none;
+  border-color: #3DCD58;
+  box-shadow: 0 0 5px rgba(24, 300, 30, 0.5);
+}
+
+.anex-image {
+  width: 1.5rem;
+  cursor: pointer;
+}
+
+.submit-image {
+  width: 2rem;
+  cursor: pointer;
+}
+
+.icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 1rem;
+}
+
+.icons small{
+  font-size: 0.8rem;
+}
+
+.options-category:hover {
+  background-color: #3DCD58;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.footer {
+  background: #ffffff;
+  width: 1260px;
+  height: 200px;
   position: absolute;
-  left: 464px;
-  top: 82px;
-  overflow: visible;
+  left: 0px;
+  top: 1470px;
 }
+
 .calendar-image {
   position: absolute;
   inset: 0;
 }
+
 .rectangle-calendar {
   border-radius: 5px;
   border-style: solid;
@@ -31,6 +115,7 @@
   left: 998px;
   top: 141px;
 }
+
 .calendar-image-dimensions {
   width: 228px;
   height: 246px;
@@ -38,124 +123,7 @@
   left: 1010px;
   top: 155px;
 }
-.joana-ramos-header-image {
-  border-radius: 50%;
-  width: 53px;
-  height: 49px;
-  position: absolute;
-  left: 1031px;
-  top: 16px;
-}
-.joana-ramos {
-  color: #434448;
-  text-align: left;
-  font: 400 18px "Varela Round", sans-serif;
-  position: absolute;
-  left: 1098px;
-  top: 34px;
-}
-.schneider-logo-header {
-  width: 175px;
-  height: 74px;
-  position: absolute;
-  left: 33px;
-  top: 0px;
-}
-.search-bar-header {
-  position: absolute;
-  inset: 0;
-}
-.header-ara {
-  width: 573px;
-  height: 37px;
-  position: static;
-}
-.rectangle-2 {
-  background: #ececec;
-  border-radius: 5px;
-  border-style: solid;
-  border-color: #626469;
-  border-width: 0.6px;
-  width: 573px;
-  height: 37px;
-  position: absolute;
-  left: 257px;
-  top: 27px;
-  box-shadow: inset 0.3px 0.3px 7px 0px rgba(223, 223, 223, 0.1),
-    inset -0.3px -0.3px 10px 0px rgba(223, 223, 223, 0.05);
-}
-.pesquise-por-pessoas-desafios-assuntos-outros {
-  color: #626469;
-  text-align: left;
-  font: 400 15px "Varela Round", sans-serif;
-  position: absolute;
-  left: 269px;
-  top: 38px;
-  width: 422px;
-  height: 12px;
-}
-.rectangle-search {
-  background: #626469;
-  width: 43px;
-  height: 37px;
-  position: absolute;
-  left: 787px;
-  top: 27px;
-  cursor: pointer;
-}
-.text-icon-header {
-  position: absolute;
-  left: 886px;
-  top: 36px;
-  overflow: visible;
-}
-.alert-icon-header {
-  position: absolute;
-  left: 963px;
-  top: 37px;
-  overflow: visible;
-}
-.a-biggertext {
-  background: #f1f1f1;
-  border-style: solid;
-  border-color: transparent;
-  border-width: 0.5px;
-  width: 38px;
-  height: 32px;
-  position: absolute;
-  left: 1165px;
-  top: 91px;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-}
-.a {
-  color: #000000;
-  text-align: left;
-  font: 400 20px "Varela Round", sans-serif;
-  position: absolute;
-  left: 1169px;
-  top: 99px;
-}
-.a-lowertext {
-  background: #f1f1f1;
-  border-style: solid;
-  border-color: transparent;
-  border-width: 0.5px;
-  width: 31px;
-  height: 27px;
-  position: absolute;
-  left: 1217px;
-  top: 93px;
-}
-.a2 {
-  color: #000000;
-  text-align: left;
-  font: 400 17px "Varela Round", sans-serif;
-  position: absolute;
-  left: 1222px;
-  top: 99px;
-  width: 29px;
-  height: 24px;
-}
+
 .rectangle-first-profile {
   background: #ffffff;
   border-radius: 8px;
@@ -168,6 +136,7 @@
   left: 202px;
   top: 141px;
 }
+
 .line-profile-2 {
   border-style: solid;
   border-color: #e0dfdc;
@@ -178,6 +147,7 @@
   left: 202px;
   top: 535px;
 }
+
 .inicio {
   color: #3dcd58;
   text-align: center;
@@ -191,6 +161,7 @@
   align-items: center;
   justify-content: center;
 }
+
 .premiacoes {
   color: rgba(0, 0, 0, 0.6);
   text-align: center;
@@ -204,6 +175,7 @@
   align-items: center;
   justify-content: center;
 }
+
 .sobre {
   color: rgba(0, 0, 0, 0.6);
   text-align: center;
@@ -217,6 +189,7 @@
   align-items: center;
   justify-content: center;
 }
+
 .publicacoes {
   color: rgba(0, 0, 0, 0.6);
   text-align: center;
@@ -230,6 +203,7 @@
   align-items: center;
   justify-content: center;
 }
+
 .mais {
   color: rgba(0, 0, 0, 0.6);
   text-align: center;
@@ -242,18 +216,22 @@
   align-items: center;
   justify-content: center;
 }
+
 .mais-span {
   color: rgba(0, 0, 0, 0.6);
   font: 600 16px "Segoe UI", sans-serif;
 }
+
 .mais-span2 {
   color: rgba(0, 0, 0, 0.6);
   font: 400 10px "Segoe UI", sans-serif;
 }
+
 .mais-span3 {
   color: rgba(0, 0, 0, 0.6);
   font: 600 16px "Segoe UI", sans-serif;
 }
+
 .underline-text-profile {
   background: #3dcd58;
   border-radius: 2px 2px 0px 0px;
@@ -263,6 +241,7 @@
   left: 210px;
   top: 581px;
 }
+
 .follow-text-more-profile {
   display: flex;
   flex-direction: row;
@@ -273,6 +252,7 @@
   left: 227px;
   top: 481px;
 }
+
 .frame-49 {
   border-radius: 20px;
   border-style: solid;
@@ -287,11 +267,13 @@
   flex-shrink: 0;
   position: relative;
 }
+
 .vector5 {
   flex-shrink: 0;
   position: relative;
   overflow: visible;
 }
+
 .seguir {
   color: #009bd6;
   text-align: left;
@@ -302,6 +284,11 @@
   justify-content: flex-start;
   cursor: pointer;
 }
+
+.seguir-button:hover {
+  background-color: #3dcd58 ;
+}
+
 .mensagem-button {
   cursor: pointer;
   background: #009bd6;
@@ -315,9 +302,11 @@
   flex-shrink: 0;
   position: relative;
 }
-.mensagem-button:hover{
-  background-color: #ff4500;
+
+.mensagem-button:hover {
+  background-color: #3dcd58 ;
 }
+
 .convite {
   color: #ffffff;
   text-align: left;
@@ -327,6 +316,7 @@
   align-items: center;
   justify-content: flex-start;
 }
+
 .mais-button {
   border-radius: 20px;
   border-style: solid;
@@ -342,6 +332,7 @@
   position: relative;
   cursor: pointer;
 }
+
 .mais2 {
   color: rgba(0, 0, 0, 0.6);
   text-align: center;
@@ -352,6 +343,7 @@
   justify-content: center;
   cursor: pointer;
 }
+
 .person-profile-image-3 {
   background: linear-gradient(to left, #b5b5b5, #b5b5b5);
   border-radius: 50%;
@@ -361,6 +353,7 @@
   left: 227px;
   top: 431px;
 }
+
 .person-profile-image-2 {
   background: linear-gradient(to left, #8d8d8d, #8d8d8d);
   border-radius: 50%;
@@ -370,6 +363,7 @@
   left: 245px;
   top: 431px;
 }
+
 .person-profile-image-1 {
   background: linear-gradient(to left, #6c6c6c, #6c6c6c);
   border-radius: 50%;
@@ -379,6 +373,7 @@
   left: 263px;
   top: 431px;
 }
+
 ._189-seguidores {
   color: rgba(0, 0, 0, 0.6);
   text-align: left;
@@ -392,6 +387,7 @@
   align-items: center;
   justify-content: flex-start;
 }
+
 .profile-first-text {
   display: flex;
   flex-direction: row;
@@ -402,7 +398,8 @@
   left: 227px;
   top: 394px;
 }
-.estagia-text {
+
+.estagiaria-profile-text {
   color: rgba(0, 0, 0, 0.6);
   text-align: left;
   font: 400 14px "Segoe UI", sans-serif;
@@ -411,12 +408,14 @@
   align-items: flex-end;
   justify-content: flex-start;
 }
+
 ._189-seguidores2 {
   flex-shrink: 0;
   width: 194px;
   height: 22px;
   position: relative;
 }
+
 ._189-seguidores3 {
   color: rgba(0, 0, 0, 0.6);
   text-align: left;
@@ -430,6 +429,7 @@
   align-items: center;
   justify-content: flex-start;
 }
+
 .ela-dela {
   color: rgba(0, 0, 0, 0.9);
   text-align: left;
@@ -443,6 +443,7 @@
   align-items: flex-end;
   justify-content: flex-start;
 }
+
 .joana-ramos-profile-name {
   display: flex;
   flex-direction: row;
@@ -453,6 +454,7 @@
   left: 227px;
   top: 344px;
 }
+
 .joana-ramos-profile-name2 {
   color: #000000;
   text-align: left;
@@ -462,6 +464,7 @@
   align-items: center;
   justify-content: flex-start;
 }
+
 .background-image-profile {
   background: linear-gradient(to left, #e0e0e0, #e0e0e0);
   border-radius: 8px 8px 0px 0px;
@@ -471,6 +474,7 @@
   left: 202px;
   top: 141px;
 }
+
 .rectangle-profile {
   background: #ffffff;
   border-radius: 8px;
@@ -483,6 +487,7 @@
   left: 202px;
   top: 599px;
 }
+
 .ver-todos-os-detalhes {
   color: rgba(0, 0, 0, 0.6);
   text-align: center;
@@ -496,6 +501,7 @@
   align-items: center;
   justify-content: center;
 }
+
 .line-profile {
   border-style: solid;
   border-color: #e0dfdc;
@@ -506,6 +512,7 @@
   left: 202px;
   top: 730px;
 }
+
 .estagiaria-text {
   color: #626469;
   text-align: left;
@@ -519,6 +526,7 @@
   align-items: flex-end;
   justify-content: flex-start;
 }
+
 .sobre2 {
   color: rgba(0, 0, 0, 0.9);
   text-align: left;
@@ -532,6 +540,7 @@
   align-items: flex-end;
   justify-content: flex-start;
 }
+
 .rectangle-all-publications {
   background: #ffffff;
   border-radius: 8px;
@@ -544,6 +553,7 @@
   left: 202px;
   top: 794px;
 }
+
 .rectangle-publications-2 {
   background: #ffffff;
   border-radius: 8px;
@@ -556,6 +566,7 @@
   left: 219px;
   top: 879px;
 }
+
 .rectangle-publications {
   background: #ffffff;
   border-radius: 8px;
@@ -568,6 +579,7 @@
   left: 601px;
   top: 879px;
 }
+
 .gostei {
   color: rgba(0, 0, 0, 0.6);
   text-align: center;
@@ -581,6 +593,7 @@
   align-items: center;
   justify-content: center;
 }
+
 .gostei2 {
   color: rgba(0, 0, 0, 0.6);
   text-align: center;
@@ -594,6 +607,7 @@
   align-items: center;
   justify-content: center;
 }
+
 .comentar {
   color: rgba(0, 0, 0, 0.6);
   text-align: center;
@@ -607,6 +621,7 @@
   align-items: center;
   justify-content: center;
 }
+
 .comentar2 {
   color: rgba(0, 0, 0, 0.6);
   text-align: center;
@@ -620,6 +635,7 @@
   align-items: center;
   justify-content: center;
 }
+
 .compartilhar {
   color: rgba(0, 0, 0, 0.6);
   text-align: center;
@@ -633,6 +649,7 @@
   align-items: center;
   justify-content: center;
 }
+
 .compartilhar2 {
   color: rgba(0, 0, 0, 0.6);
   text-align: center;
@@ -646,6 +663,7 @@
   align-items: center;
   justify-content: center;
 }
+
 .enviar {
   color: rgba(0, 0, 0, 0.6);
   text-align: center;
@@ -659,6 +677,7 @@
   align-items: center;
   justify-content: center;
 }
+
 .enviar2 {
   color: rgba(0, 0, 0, 0.6);
   text-align: center;
@@ -672,7 +691,8 @@
   align-items: center;
   justify-content: center;
 }
-.descubra-como-seus-h-bitos-mobile-podem-fazer-a-diferen-a-para-o-meio-ambiente {
+
+.descubra-como-text {
   color: rgba(0, 0, 0, 0.9);
   text-align: left;
   font: 400 14px/20px "Segoe UI", sans-serif;
@@ -682,7 +702,7 @@
   width: 331px;
   height: 37px;
 }
-.esse-post-traz-um-dashboard-com-insights-valiosos-para-impulsionar-suas-a-es-em-prol-do-meio-ambiente {
+.esse-post-traz-text {
   color: rgba(0, 0, 0, 0.9);
   text-align: left;
   font: 400 14px/20px "Segoe UI", sans-serif;
@@ -705,6 +725,7 @@
   align-items: center;
   justify-content: center;
 }
+
 .linha-icon-publications {
   border-style: solid;
   border-color: #e0dfdc;
@@ -715,6 +736,7 @@
   left: 202px;
   top: 1375px;
 }
+
 .rectangle-publications-image-2 {
   background: linear-gradient(to left, #979797, #979797);
   width: 363px;
@@ -724,6 +746,7 @@
   top: 1014px;
   cursor: pointer;
 }
+
 .rectangle-publications-image {
   background: linear-gradient(to left, #979797, #979797);
   width: 363px;
@@ -733,6 +756,7 @@
   top: 1014px;
   cursor: pointer;
 }
+
 .rectangle-publications-text-2 {
   background: #eef3f8;
   width: 363px;
@@ -741,6 +765,7 @@
   left: 220px;
   top: 1204px;
 }
+
 .rectangle-publications-text {
   background: #eef3f8;
   width: 363px;
@@ -749,54 +774,63 @@
   left: 602px;
   top: 1204px;
 }
+
 .vector-text {
   position: absolute;
   left: 346px;
   top: 1298px;
   overflow: visible;
 }
+
 .vector-text2 {
   position: absolute;
   left: 728px;
   top: 1298px;
   overflow: visible;
 }
+
 .vector-share {
   position: absolute;
   left: 436px;
   top: 1299px;
   overflow: visible;
 }
+
 .vector-share2 {
   position: absolute;
   left: 818px;
   top: 1299px;
   overflow: visible;
 }
+
 .vector-privado {
   position: absolute;
   left: 527px;
   top: 1296px;
   overflow: visible;
 }
+
 .vector-privado2 {
   position: absolute;
   left: 909px;
   top: 1296px;
   overflow: visible;
 }
+
 .vector-like {
   position: absolute;
   left: 256px;
   top: 1296px;
   overflow: visible;
 }
+
 .vector-like2 {
   position: absolute;
   left: 638px;
   top: 1296px;
   overflow: visible;
 }
+
 .joana-ramos-publications-image {
   width: 40px;
   height: 40px;
@@ -805,6 +839,7 @@
   top: 894px;
   cursor: pointer;
 }
+
 .joana-ramos-name-publications {
   display: flex;
   flex-direction: row;
@@ -827,6 +862,7 @@
   left: 669px;
   top: 929px;
 }
+
 ._4-d {
   color: rgba(0, 0, 0, 0.6);
   text-align: left;
@@ -836,11 +872,13 @@
   align-items: flex-end;
   justify-content: flex-start;
 }
+
 .frame {
   flex-shrink: 0;
   position: relative;
   overflow: visible;
 }
+
 ._189-seguidores4 {
   width: 194px;
   height: 11px;
@@ -848,6 +886,7 @@
   left: 669px;
   top: 914px;
 }
+
 ._189-seguidores5 {
   color: rgba(0, 0, 0, 0.6);
   text-align: left;
@@ -861,6 +900,7 @@
   align-items: center;
   justify-content: flex-start;
 }
+
 .joana-ramos-name-publications2 {
   display: flex;
   flex-direction: row;
@@ -871,6 +911,7 @@
   left: 287px;
   top: 891px;
 }
+
 .days-public-icon-image2 {
   display: flex;
   flex-direction: row;
@@ -882,6 +923,7 @@
   top: 929px;
   cursor: pointer;
 }
+
 ._1-d {
   color: rgba(0, 0, 0, 0.6);
   text-align: left;
@@ -891,11 +933,13 @@
   align-items: flex-end;
   justify-content: flex-start;
 }
+
 .frame2 {
   flex-shrink: 0;
   position: relative;
   overflow: visible;
 }
+
 ._189-seguidores6 {
   width: 194px;
   height: 11px;
@@ -903,7 +947,8 @@
   left: 287px;
   top: 914px;
 }
-.conectados-e-sustent-veis-como-o-uso-consciente-do-celular-contribui-para-um-futuro-melhor {
+
+.conectados-text {
   color: rgba(0, 0, 0, 0.9);
   text-align: left;
   font: 600 14px/20px "Segoe UI", sans-serif;
@@ -913,7 +958,8 @@
   width: 331px;
   height: 37px;
 }
-.desvendando-a-sustentabilidade-visualizando-m-tricas-cruciais-com-um-dashboard-inovador {
+
+.desvendando-a-sustentabilidade-text {
   color: rgba(0, 0, 0, 0.9);
   text-align: left;
   font: 600 14px/20px "Segoe UI", sans-serif;
@@ -923,23 +969,27 @@
   width: 331px;
   height: 37px;
 }
+
 .backward-icon {
   position: absolute;
   inset: 0;
 }
+
 .group-46 {
   position: absolute;
   left: 888px;
   top: 821px;
   overflow: visible;
 }
+
 .forward-icon {
   position: absolute;
   left: 928px;
   top: 821px;
   overflow: visible;
 }
-.publica-es-anteriores {
+
+.publicacoes-anteriores {
   color: rgba(0, 0, 0, 0.9);
   text-align: left;
   font: 600 20px "Segoe UI", sans-serif;
@@ -952,6 +1002,7 @@
   align-items: flex-end;
   justify-content: flex-start;
 }
+
 .joana-ramos-publications-image2 {
   width: 40px;
   height: 40px;
@@ -959,210 +1010,11 @@
   left: 236px;
   top: 894px;
 }
+
 .joana-ramos-profile-icon {
   width: 108px;
   height: 110px;
   position: absolute;
   left: 229px;
   top: 216px;
-}
-.joana-ramos-header-icon {
-  border-radius: 29.5px;
-  width: 53px;
-  height: 49px;
-  position: absolute;
-  left: 1031px;
-  top: 16px;
-  cursor: pointer;
-}
-.rectangle-area-footer {
-  background: #ffffff;
-  width: 1280px;
-  height: 294px;
-  position: absolute;
-  left: 0px;
-  top: 1470px;
-}
-.all-rights-reserved {
-  color: var(--dark, #0a142f);
-  text-align: center;
-  font: 400 14px "Trebuchet MS", sans-serif;
-  opacity: 0.6499999761581421;
-  position: absolute;
-  left: 509px;
-  top: calc(50% - -807px);
-  cursor: pointer;
-}
-.saiba-mais-icons-footer {
-  width: 96px;
-  height: 223px;
-  position: absolute;
-  left: 809px;
-  top: 1402px;
-  overflow: hidden;
-  cursor: pointer;
-}
-.learn-more {
-  color: var(--dark, #0a142f);
-  text-align: left;
-  font: 400 18px "Trebuchet MS", sans-serif;
-  position: absolute;
-  left: 0px;
-  top: calc(50% - 10.5px);
-  cursor: pointer;
-}
-.about-alyeska-press {
-  color: var(--dark, #0a142f);
-  text-align: left;
-  font: 400 14px/30px "Trebuchet MS", sans-serif;
-  opacity: 0.800000011920929;
-  position: absolute;
-  left: 0px;
-  top: calc(50% - 38.5px);
-}
-.social-icons-footer {
-  width: 193px;
-  height: 72px;
-  position: absolute;
-  left: 991px;
-  top: 1502px;
-  overflow: hidden;
-  cursor: pointer;
-}
-.social {
-  color: var(--dark, #0a142f);
-  text-align: left;
-  font: 400 18px "Trebuchet MS", sans-serif;
-  position: absolute;
-  left: 0px;
-  top: calc(50% - 36px);
-}
-.group-52 {
-  position: absolute;
-  inset: 0;
-}
-.bxl-facebook {
-  position: absolute;
-  left: 0.33px;
-  top: 53px;
-  overflow: visible;
-}
-.bxl-twitter {
-  position: absolute;
-  left: 79px;
-  top: 54.02px;
-  overflow: visible;
-}
-.instagram-logo {
-  position: absolute;
-  left: 35px;
-  top: 53px;
-  overflow: visible;
-}
-.youtube-logo {
-  position: absolute;
-  left: 124px;
-  top: 54.18px;
-  overflow: visible;
-}
-.object {
-  width: 20px;
-  height: 20px;
-  position: static;
-}
-.bitmap {
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  left: 173px;
-  top: 52px;
-}
-.bitmap2 {
-  background: var(--dark, #0a142f);
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  left: 173px;
-  top: 52px;
-}
-.divider-line-icon {
-  background: var(--dark, #0a142f);
-  border-style: solid;
-  border-color: #191919;
-  border-width: 1px;
-  opacity: 0.20000000298023224;
-  width: 1073px;
-  height: 1px;
-  position: absolute;
-  left: 104px;
-  top: 1658px;
-}
-.sobre-o-projeto-header-icon {
-  color: #535353;
-  text-align: left;
-  font: 400 17px "Varela Round", sans-serif;
-  position: absolute;
-  left: 697px;
-  top: 93px;
-  cursor: pointer;
-}
-.inicio-header-icon {
-  color: #535353;
-  text-align: left;
-  font: 400 17px "Varela Round", sans-serif;
-  position: absolute;
-  left: 286px;
-  top: 93px;
-  cursor: pointer;
-}
-.perfil-header-icon {
-  color: #535353;
-  text-align: left;
-  font: 400 17px "Varela Round", sans-serif;
-  position: absolute;
-  left: 490px;
-  top: 93px;
-  cursor: pointer;
-}
-.como-usar-header-icon {
-  color: #535353;
-  text-align: left;
-  font: 400 17px "Varela Round", sans-serif;
-  position: absolute;
-  left: 873px;
-  top: 93px;
-  cursor: pointer;
-}
-.forum-header-icon {
-  color: #535353;
-  text-align: left;
-  font: 400 17px "Varela Round", sans-serif;
-  position: absolute;
-  left: 383px;
-  top: 94px;
-  cursor: pointer;
-}
-.ranking-header-icon {
-  color: #535353;
-  text-align: left;
-  font: 400 17px "Varela Round", sans-serif;
-  position: absolute;
-  left: 587px;
-  top: 93px;
-  cursor: pointer;
-}
-.open-new-window-icon {
-  width: 18px;
-  height: 18px;
-  position: absolute;
-  left: 963px;
-  top: 94px;
-  cursor: pointer;
-}
-.search-icon {
-  position: absolute;
-  left: 801px;
-  top: 40px;
-  overflow: visible;
-  cursor: pointer;
 }
