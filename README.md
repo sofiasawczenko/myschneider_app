@@ -22,3 +22,7 @@ git clone https://github.com/sofiasawczenko/myschneider_website
 ### Objetivo
 
 Proporcionar uma abordagem sustentável para motivar os colaboradores da Schneider através de iniciativas animadoras.
+
+### Futuro
+
+No futuro, há um plano para introduzir uma funcionalidade empolgante chamada "Duelo de Perguntas". Essa funcionalidade permitirá que os funcionários participem de desafios de perguntas e respostas, seja individualmente ou em grupo. O principal objetivo é promover a interação entre os membros da equipe e o desenvolvimento do conhecimento de uma maneira divertida e engajadora.
