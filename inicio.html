@@ -5,16 +5,19 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link rel="icon" type="image/x-icon" href="img/SchneiderLogo.png">
-  <link rel="stylesheet" href="css/rank.css">
+  <link rel="icon" type="image/x-icon" href="img/SchneiderLogo.png" />
+  <link rel="stylesheet" href="css/rank.css" />
   <link rel="stylesheet" href="css/inicio.css" />
   <link rel="stylesheet" href="css/shared-items.css" />
+  <link rel="stylesheet" href="css/drawer.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/js/bootstrap.min.js"></script>
   <title>My Schneider</title>
 </head>
 
-<body class="bg-light" style="width: 100%;">
+<body class="bg-light" style="width: 100%">
   <!----------------------------------------------- nav bar --------------------------------------------------------------->
-  <nav>
+  <nav class="remove">
     <div class="d-flex justify-content-evenly">
       <img src="img/schneider-logo.svg" alt="logo da schneider" />
 
@@ -32,22 +35,70 @@
       <div class="d-flex align-items-center">
         <img src="img/joana-photo.svg" alt="foto de perfil" />
         <p class="pt-3">Joana Ramos</p>
-        <a class="icons mx-2" href="login.html" style="width: 25px; height: 20px;">
+        <a class="icons mx-2" href="login.html" style="width: 25px; height: 20px">
           <img class="img-fluid" src="img/share-icon.svg" alt="compartilhar postagem" />
         </a>
       </div>
     </div>
     <ul class="nav-bar-items">
       <li class="active"><a href="inicio.html">Inicio</a></li>
-      <li><a href="rank.html">Ranking</a></li>
       <li><a href="forum.html">Fórum</a></li>
       <li><a href="perfil.html">Perfil</a></li>
+      <li><a href="rank.html">Empoyer</a></li>
       <li><a href="index.html">Sobre o Projeto</a></li>
-      <li><a href="instituto.html">Instituto Schneider</a></li>
+      <li><a href="instituto.html">Fundação</a></li>
+      <li><a href="faq.html">FAQ</a></li>
     </ul>
   </nav>
   <!----------------------------------------------- nav bar --------------------------------------------------------------->
+  <!--Drawer Responsive-->
+  <div id="burger">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+  </div>
+  <div id="nav">
 
+    <div style="display: flex; flex-direction: column;">
+      <div class="super-container-drawer">
+        <img src="img/joana-photo.svg">
+        <div class="container-drawer-profile">
+          <h3 class="h3profile">Joana Ramos</h3>
+          <p class="pprofile">Estagiaria de RH</p>
+        </div>
+      </div>
+
+      <ul class="uldrawer">
+        <li class="lidrawer">
+          <a class="a-drawer active" href="inicio.html">Inicio</a>
+        </li>
+        <li class="lidrawer">
+          <a class="a-drawer" href="forum.html">Forum</a>
+        </li>
+        <li class="lidrawer">
+          <a class="a-drawer" href="perfil.html">Perfil</a>
+        </li>
+        <li class="lidrawer">
+          <a class="a-drawer" href="rank.html">Empoyer</a>
+        </li>
+        <li class="lidrawer">
+          <a class="a-drawer" href="index.html">Sobre o Projeto</a>
+        </li>
+        <li class="lidrawer">
+          <a class="a-drawer" href="instituto.html">Fundação</a>
+        </li>
+        <li class="lidrawer">
+          <a class="a-drawer" href="faq.html">FAQ</a>
+        </li>
+        <li class="lidrawer">
+          <a class="a-drawer" href="login.html">Logout</a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+  </div>
+  <!--Drawer Responsive-->
   <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
     <ol class="carousel-indicators">
       <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
@@ -119,6 +170,18 @@
     <hr class="divider" style="width: 80%" />
   </div>
 
+  <div class="toast align-items-center text-white border-0"
+    style="background-color: #3dcd58; position: fixed; top: 1rem; left: 20px" role="alert" aria-live="assertive"
+    aria-atomic="true">
+    <div class="d-flex">
+      <div class="toast-body">
+        Parabéns pela postagem, você ganhou 50 pontos de experiência
+      </div>
+      <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"
+        aria-label="Close"></button>
+    </div>
+  </div>
+
   <main>
     <div class="container">
       <div class="row">
@@ -127,7 +190,7 @@
             <p class="h4">Joana Ramos</p>
             <p class="h6 text-secondary">Estagiária de RH</p>
             <hr style="width: 80%; height: 2px" class="text-color-green-xp" />
-            <p class="text-color-green-xp">Pontos: 5678xp</p>
+            <p class="text-color-green-xp" id="pontos-adquiridos"></p>
           </div>
           <div class="bg-white px-4 py-2 border rounded">
             <span>
@@ -225,15 +288,16 @@
       </div>
     </div>
   </main>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="js/inicio.js"></script>
   <footer class="bg-white d-flex flex-column align-items-center justify-content-center py-4 mt-5">
-    <img src="img/myschneider-logo-footer.svg" alt="logo mySchneider">
+    <img src="img/myschneider-logo-footer.svg" alt="logo mySchneider" />
 
-    <hr class="divider">
+    <hr class="divider" />
     <p>© 2023 MySchneider | All Rights Reserved</p>
   </footer>
+  <script src="js/drawer.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/js/bootstrap.min.js"></script>
+  <script src="js/inicio.js"></script>
 </body>
 
 </html>
