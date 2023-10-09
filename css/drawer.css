@@ -62,8 +62,8 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 8px;
-    padding: 20px;
+    gap: 0px;
+    padding: 0px;
 }
 
 .container-drawer-profile {
@@ -134,4 +134,53 @@ a:hover {
         top: 90%;
         left: 12%;
     }
+}
+
+.politicas-de-uso-text {
+    border-bottom: 2px solid; 
+    display: inline;
+    margin-top: 10%;
+}
+  
+.text-schneider-color {
+    color:#3DCD58;
+    display: inline-block;
+}
+
+.white-square {
+    background-color: white;
+}
+
+.bg-split {
+    background-image: linear-gradient(to bottom, white 50%);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.carousel-indicators {
+    width: 50%;
+}
+
+.bg-nav {
+    color: grey;
+}
+
+.imagem-joana img {
+    width: 35px; /* Largura da imagem */
+    height: 35px; /* Altura da imagem */
+    border-radius: 50%; /* Borda circular (opcional) */
+    margin-right: 10px; /* Espaçamento entre a imagem e o nome */
+    margin-left: 10px;
+}
+
+.nome-joana {
+    font-size: 14px; /* Tamanho da fonte */
+}
+
+.navbar-menu-img {
+    margin-right: 10px;
+}
+
+.bg-nav {
+    color: grey !important;
 }

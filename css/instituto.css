@@ -7,21 +7,191 @@ body {
 }
 
 .instituto-banner{
-  background-image: url('../img/instituto/projeto-banner.svg');
-  height: 350px;
+  background-image: url('../img/instituto/banner-fundacao.svg');
+  height: 500px;
   width: 100%;
 }
 
 .text-schneider-color {
-  color: #3DCD58
+  font-family:  'Varela Round', Arial, Helvetica, sans-serif;
+  color: #3DCD58;
+  font-size: 50%;
 }
 
 .bg-schneider-color {
   background-color: #3DCD58
 }
 
+.fs-2 {
+  font-family:  'Varela Round', Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
 .compromisso-banner {
   background-image: url('../img/instituto/compromisso.svg');
-  height: 200px;
+  height: 150%;
   width: 100%;
 }
+
+.fw-schneider{
+  font-size: 380%;
+  font-family:  'Varela Round', Arial, Helvetica, sans-serif;
+}
+
+.text-white {
+  font-size: 220%;
+  font-family:  'Varela Round', Arial, Helvetica, sans-serif;
+}
+
+.conheca-text {
+  font-family: 'Varela Round', Arial, Helvetica, sans-serif;
+  font-size: 200%; 
+  font-weight: bold;
+  color: #3DCD58
+
+}
+
+.destaque {
+  color: #3DCD58;
+  font-weight: bold;
+
+}
+
+.conheca-subtext {
+  font-family:  'Varela Round', Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+.text-center {
+  font-family:  'Varela Round', Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+body {
+  background-color: #f0f0f0;
+}
+
+.custom-container {
+  height: 500px;
+  width: 300%;
+  margin-right: 10px;
+
+}
+
+.container-th {
+  padding: 50px;
+  margin-left: 20px;
+}
+
+
+.thermometer-container {
+  text-align: center;
+}
+
+.thermometer {
+  display: inline-block;
+  background-color: #ccc;
+  width: 100%;
+  max-width: 300px;
+  height: 15px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.progress-bar-green {
+  background-color: #3DCD58;
+  width: 84%;
+  height: 95%;
+  border-radius: 10px;
+}
+
+.progress-bar-gray {
+  background-color: #ccc;
+  width: 0.01%;
+  height: 60%;
+  border-radius: 10px;
+}
+
+.donation-info {
+  margin-top: 10px;
+  color: #555;
+  font-family:  'Varela Round', Arial, Helvetica, sans-serif;
+}
+
+.btn-donate {
+  background-color: #3DCD58;
+  border-color: #3DCD58;
+  color: #fff;
+}
+
+.btn-volunteer {
+  background-color: #42B4E6;
+  border-color: #42B4E6;
+  color: #fff;
+}
+
+.text-doacoes {
+  font-family:  'Varela Round', Arial, Helvetica, sans-serif;
+}
+
+.custom-container {
+  background-color: #f1f1f1; 
+  border-radius: 10px;
+  padding: 40px;
+  margin-top: 20px;
+  width: 70%;
+  align-items: center;
+  text-align: center; /* Adicionado para centralizar o conteúdo */
+}
+
+.text-info-arrecadado {
+  color:#3DCD58;
+  font-weight: bold;
+  text-align: left;
+}
+
+/* Adicione este CSS no seu arquivo de estilo */
+.footer {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.text-info-meta-apoiadores {
+  font-weight: bold;
+  text-align: left;
+}
+
+@media (max-width: 576px) {
+  #carouselExampleIndicators .carousel-inner img {
+    max-height: 50px;
+    max-width: 50px;
+    width: auto;
+    height: auto;
+  }
+}
+
+.nav-link {
+    font-size: 16px; /* Define o tamanho da fonte */
+    color: #333 !important; /* Define a cor do texto */ 
+    text-decoration: none; /* Remove sublinhado padrão dos links */
+    margin-right: 15px; /* Adiciona um espaçamento entre os links */
+}
+  
+.nav-link:hover {
+  color:#3DCD58 !important;;
+}
+
+.carousel-container {
+  width: 100%;
+  height: 100vh; /* Isso faz com que a div ocupe a altura total da tela */
+  padding: 20px; /* Adiciona algum espaço interno (padding) */
+  margin: 20px; /* Adiciona algum espaço externo (margin) */
+}
+
+.strong-text-conheca {
+  font-family:  'Varela Round', Arial, Helvetica, sans-serif;
+}
+
+

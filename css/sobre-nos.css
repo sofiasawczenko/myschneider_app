@@ -15,3 +15,15 @@ body {
 .text-schneider-color {
   color: #3DCD58
 }
+
+.custom-container {
+  transition: background-color 0.3s;
+}
+
+.custom-container:hover {
+  background-color: #3DCD58 !important;
+}
+
+.text-center {
+  align-items: justify !important;
+}
