@@ -165,7 +165,33 @@
     height: auto;
   }
 }
+/*Card 3*/
+#containercardthree{
+  height: 500px;
+  border: 1px solid #E0DFDC;
+  border-radius: 8px;
+  
+  @media (max-width: 1000px){
+    height: auto;
+  }
+}
+#containercardthree_innerContainer{
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  justify-content: space-evenly;
+  
+}
+#containercardthree_innerCard{
+  height: 255px;
 
+  width: 30%;
+  border: 1px solid #E0DFDC;
+  border-radius: 8px;
+}
+#InncerCard_Footer{
+  height: 1px;
+}
 /* Achievements*/
 
 .containerachievements{
