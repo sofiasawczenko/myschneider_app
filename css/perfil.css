@@ -196,7 +196,19 @@
   align-items: center;
   width: 1rem;
 }
-
+#containercardthree-gambeta{
+  
+  display: none;
+  @media (max-width: 1000px){
+    display: block;
+    height: 400px;
+    border: 1px solid #E0DFDC;
+    border-radius: 8px;
+  }
+}
+#text-gambeta{
+  text-align: center;
+}
 .icons small{
   font-size: 0.8rem;
 }
