@@ -189,8 +189,16 @@
   border: 1px solid #E0DFDC;
   border-radius: 8px;
 }
-#InncerCard_Footer{
-  height: 1px;
+.icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 1rem;
+}
+
+.icons small{
+  font-size: 0.8rem;
 }
 /* Achievements*/
 
