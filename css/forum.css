@@ -1,25 +1,438 @@
+@media (max-width: 767px) {
+    .navbar-mobile {
+        padding: 40px; /* Adiciona 40 pixels de espaço ao redor da nav em mobile */
+    }
+}
+
+
+.community-container{
+    margin-left: 0;
+    width: 20%;
+}
+  
+@media (max-width: 767px) {
+    .community-container {
+      width: 20%; 
+    }
+}
+
+.people-container {
+    width: 15%
+}
+
+.message-container {
+    width: 30%
+}
+
+.people-text {
+    font-family: 'Varela Round', Arial, Helvetica, sans-serif;
+}
+  
+.image-geral {
+    margin-left: 6%;
+}
+
+.people-container {
+    margin-left:0;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.image-community {
+    margin-bottom: 4%;
+    border-radius: 20%;
+    transition: box-shadow 0.1s !important; 
+}
+
+.image-geral {
+    transition: box-shadow 0.1s !important; 
+    border-radius: 20%;
+}
+  
+.image-community-icon {
+    margin-bottom: 4%;
+    margin: 15%;
+}
+
+.image-community-text-mic {
+    margin-bottom: 0xp;
+    padding-bottom: 0xp;
+}
 * {
     font-family: 'Varela Round', Arial, Helvetica, sans-serif;
 }
 
-.carousel-inner {
+.linha-fina {
+    border-bottom: 1px solid #ccc; 
+    margin-bottom: 20px; 
+    width: 80%;
+}
+
+
+.container-fluid {
+    background-color: white;
+}
+
+.text-forum {
+    font-family: 'Varela Round', Arial, Helvetica, sans-serif !important;
+}
+
+.message-container {
+    padding-left: 5%;
+}
+
+.linha-fina-2 {
+    border-bottom: 1.5px solid #ccc; 
+    margin-top: 20px; 
+    width: 350%;
+}
+
+.responder-container {
+    width: 50%;
+}
+
+.input-group-criar-post {
+    border-radius: 1px;
+    margin-top: 3%;
+    width: 1500px;
+}
+.search-box .btn {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.card-body {
+    font-family: 'Varela Round', Arial, Helvetica, sans-serif;
+}
+
+.responder-post {
+    width: 85%;
+    margin-left: 6%;
+    height: 48px;
+    border-radius: 3px;
+    border: 0.5px solid rgb(171, 171, 171);
+    background-color: rgb(242, 242, 242);
+    font-family: Arial, Helvetica, sans-serif
+
+}
+
+@media (max-width: 767px) {
+    .responder-post {
+      margin-top: 10%;
+      margin-bottom: 10%;
+      width: 100%; 
+      height: 40px;
+      background-color: #ffffff;
+    }
+}
+
+.frame {
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    align-items: center;
 }
 
-.carousel-item {
-    display: block;
-    width: 259px;
+.text-wrapper {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    margin-right: 10px;
+}
+
+.last-card {
+    margin-left: 1%;
+}
+
+.icons-like-share-message {
+    margin-left: 1%;
+    margin-bottom: 1%;
+    
+}
+
+.icon-forum {
+    width: 60px !important;
+    height: 50px !important;
+}
+
+.title-forum {
+    font-size: 16px;
+    font-family: 'Varela Round', Arial, Helvetica, sans-serif;
+    font-weight: 1400;
+}
+
+.comment-forum {
+    margin-left: 0.5%;
+    font-size: 11px;
+    color: gray;
+    gap: 0.5%;
+
+}
+
+.comment-image {
+    align-items: center;
+    justify-content: center;
+    padding-top: 20%;
+    padding-left: 70%;
+}
+
+.frame {
+    position: relative;
+    width: 900px;
+    height: 45px;
+    border-radius: 10px;
     overflow: hidden;
+    border: 1px solid;
+    border-color: gray;
+    margin-left: 1%;
+  }
+  
+.frame .search {
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    top: 16px;
+    left: 32px;
+  }
+  
+.frame .text-wrapper {
+    position: absolute;
+    top: 15px;
+    left: 76px;
+    font-family: "Varela Round-Regular", Helvetica;
+    font-weight: 200;
+    color: gray;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .box {
+    width: 28px;
+    height: 28px;
+  }
+  
+  .box .search {
+    position: fixed;
+    width: 28px;
+    height: 28px;
+    top: 0;
+    left: 0;
+  }
+  
+.macro-retangulo {
+    width: 280px;
+    height: 260px;
+    border-radius: 3px;
+    border: 0.5px solid rgb(219, 219, 219);
+    margin-bottom: 25%;
+    margin-top: 20%;
+
+    @media screen and (max-width: 390px) {
+        .macro-retangulo {
+            width: 450px;
+        }
+    }
+
 }
 
-.carousel-item img {
-    width: 100%;
-    height: auto;
+.macro-retangulo-container-2 {
+    width: 280px;
+    height: 390px;
+    border-radius: 3px;
+    border: 0.5px solid rgb(219, 219, 219);
+    margin-bottom: 5%;
 }
 
-.bg-button-action{
+.macro-retangulo-container-3 {
+    width: 280px;
+    height: 310px;
+    border-radius: 3px;
+    border: 0.5px solid rgb(219, 219, 219);
+
+}
+
+.text-forum-title {
+    font-size: 14px;
+    padding-top: 3%;
+    font-family: 'Varela Round', Arial, Helvetica, sans-serif !important;
+    color: #18583a;
+}
+  
+.text-forum-subtitle {
+    font-size: 12px;
+    color: gray;
+    margin-bottom: 8%;
+    margin-top: 0 !important;
+}
+
+.micro-retangulo {
+    background-color: #F9F9F9;
+    border-radius: 4px;
+    margin: 3%;
+    border: 0.5px solid rgb(219, 219, 219);
+}
+
+
+.micro-retangulo:hover {
+    background-color: #e4fae8 !important; 
+}
+
+.color-hover:hover {
+    background-color: #e4fae8 !important; 
+}
+
+.title-retangulo {
+    margin-top: 8%;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left: 2%;
+    gap: -20%;
+    font-weight: 500;
+}
+
+.btn-pesquisar {
+    color: white;
     background-color: #3DCD58;
-    color: #fff
+    height: 100px;
+}
+
+.image-icon-micro-retangulo {
+    margin-left: 5%;
+}
+
+.image-icon-forum {
+    margin-left: 3%;
+}
+
+.custom-search-bar {
+    width: 906px;
+    height: 45px;
+    background: #f1f3f5;
+    border: 0.5px #9d9d9d solid;
+    display: flex;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .search-input-container {
+    flex: 1;
+  }
+  
+  .search-input-container input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding: 0 10px;
+    font-size: 18px;
+    font-family: "Varela Round", sans-serif;
+  }
+  
+  .search-button-container {
+    width: 155px;
+    height: 45px;
+    position: relative;
+    background: #42b4e6;
+    border: 0.5px #828282 solid;
+  }
+  
+  .search-button-container button {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 22px;
+    font-family: "Varela Round", sans-serif;
+    font-weight: 400;
+    border: none;
+    background: none;
+    cursor: pointer;
+    outline: none;
+  }
+
+  .btn-primar {
+    background-color: #18583a;
+  }
+
+  .btn-primar:hover {
+    background-color: #3DCD58 !important; 
+}
+
+
+
+.responder-post-modal {
+    font-size: 14px;
+    padding-top: 3%;
+    padding-left: 10%;
+    font-family: 'Varela Round', Arial, Helvetica, sans-serif !important;
+    color: #18583a;
+}
+
+.caixa-de-texto-modal {
+    height: 180px;
+}
+
+.btn-comentar {
+    font-size: 14px;
+    width: 80px;
+    height:30px;
+    font-family: 'Varela Round', Arial, Helvetica, sans-serif !important;
+    color: #18583a;
+    background-color: #3DCD58;
+    gap: 2%;
+
+}
+
+.btn-cancelar {
+    font-size: 14px;
+    font-family: 'Varela Round', Arial, Helvetica, sans-serif !important;
+    color: white;
+    width: 80px;
+    height:30px;
+    background-color: #9d9d9d;
+    gap: 2%;
+}
+
+.btn-dois {
+    justify-content: end;
+    height: 60px;
+    gap: 2%;
+    margin-right: 10%;
+    margin-top: 2%;
+}
+
+.btn-comentar:hover {
+    background-color: #0a7433;
+  }
+
+  .btn-cancelar:hover {
+    background-color: #818181 !important; 
+} 
+
+@media (max-width: 576px) {
+    .container-size {
+        width: 20vw; 
+    }
+}
+
+@media (max-width: 576px) {
+    .container-size-5 {
+        height: 20%; 
+    }
+}
+
+.dm-none {
+    display: none; /* Oculta o elemento */
+}
+
+@media (min-width: 420px) {
+    .sm-none {
+        display: block; /* Torna o elemento visível em telas menores */
+    }
+}
+
+@media (max-width: 410px) {
+    .dm-none {
+        display: block; /* Torna o elemento visível em telas menores */
+    }
 }
