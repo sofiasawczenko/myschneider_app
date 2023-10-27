@@ -1,483 +1,399 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fórum</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/shared-items.css" />
-    <link rel="stylesheet" href="css/forum.css" />
-    <link rel="stylesheet" href="css/inicio.css" />
-    <link rel="stylesheet" href="css/drawer.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="../css/my/plus.css" />
-    <link rel="icon" type="image/x-icon" href="img/SchneiderLogo.png" />
-          <!-- jQuery -->
-   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-  </head>
-  <body>
-   <div class="overflow-hidden">
-      
-     <!----------------------------------------------- nav bar --------------------------------------------------------------->
-     <nav class="remove">
-       <div class="d-flex justify-content-evenly">
-         <img src="img/schneider-logo.svg" alt="logo da schneider" />
-         <div class="d-flex align-items-center">
-           <input type="text" class="form-control bg-light" placeholder="Pesquise por pessoas, desafios, assuntos & outros" aria-label="Example text with button addon" aria-describedby="button-addon1" style="width: 30vw;" />
-           <button class="btn btn-secondary btn-outline" type="button" id="button-addon1">
-             <img src="img/search-button-icon.svg" alt="pesquisar" />
-                </button>
-         </div>
-         <div class="d-flex align-items-center gap-5">
-           <img src="img/message-icon.svg" alt="messagens" />
-           <img src="img/notification-icon.svg" alt="notificações" />
-         </div>
-         <div class="d-flex align-items-center">
-           <img src="img/joana-photo.svg" alt="foto de perfil" />
-           <p class="pt-3">Joana Ramos</p>
-           <a class="icons mx-2" href="login.html" style="width: 25px; height: 20px;">
-             <img class="img-fluid" src="img/open-new-window-2.png" style="width: 15px; height: 15px;" alt="compartilhar postagem" />
-           </a>
-         </div>
-       </div>
-       <ul class="nav-bar-items">
-         <li><a href="index.html">Inicio</a></li>
-         <li class="active"><a href="forum.html">Fórum</a></li>
-         <li><a href="perfil.html">Perfil</a></li>
-         <li><a href="rank.html">Epower</a></li>
-         <li><a href="instituto.html">Fundação</a></li>
-         <li><a href="faq.html">FAQ</a></li>
-       </ul>
-     </nav>
-     <!----------------------------------------------- nav bar --------------------------------------------------------------->
-     <!-------------------------------Drawer Responsive----------------------------------------->
-     <nav class="navbar-mobile bg-light">
-       <nav class="navbar navbar-expand-lg bg-light fixed-top d-lg-none">
-         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation" style="border: none; outline: none;">
-           <div class="navbar-menu-img">
-             <img src="img/navbar-menu2.svg" style="width: 20px;" alt="navbar menu" />
-           </div>
-         </button>
-         <div class="collapse navbar-collapse" id="navbarMenu">
-           <ul class="navbar-nav ml-auto">
-             <li class="nav-item">
-               <a class="nav-link" href="index.html">Inicio</a>
-             </li>
-             <li class="nav-item">
-               <a class="nav-link" href="forum.html">Forum</a>
-             </li>
-             <li class="nav-item">
-               <a class="nav-link" href="perfil.html">Perfil</a>
-             </li>
-             <li class="nav-item">
-               <a class="nav-link" href="rank.html">Epower</a>
-             </li>
-             <li class="nav-item">
-               <a class="nav-link" href="instituto.html">Fundação</a>
-             </li>
-             <li class="nav-item">
-               <a class="nav-link" href="faq.html">FAQ</a>
-             </li>
-             <li class="nav-item">
-               <a class="nav-link" href="login.html">Logout</a>
-             </li>
-           </ul>
-         </div>
-         <a class="navbar-brand text-white d-flex align-items-center" href="#!">
-           <div class="imagem-joana">
-             <div class="super-container-drawer">
-               <img src="img/joana-photo.svg" />
-             </div>
-           </div>
-           <span class="nome-joana text-black">Joana Ramos</span>
-         </a>
-       </nav>
-     </nav>
-     <!-----------------------------END Drawer Responsive----------------------------------------->
- 
-     <!-- Web -->
- 
-     <!-- comunidades -->
-     <div class="row">
-       <div class="col">
-         <!-- <div class="macrocontainer row d-none d-md-block"> -->
-         <div class="macrocontainer">
-           <div class="container-community" style="background-color: white;">
-             <div class="row no-gutters">
-               <div class="col-md-1 col-3 p-3 community-container" style="background-color: #0d291c; min-height: 100vh; min-width: 30px;">
-                 <div class="d-flex flex-column align-items-center justify-content-top h-100 image-community">
-                   <img class="image-community-icon" src="img/rank/icon1.svg" alt="Icon 1" />
-                   <img class="image-community-icon" src="img/rank/icon2.svg" alt="Icon 2" />
-                   <img class="image-community-icon" src="img/rank/icon3.svg" alt="Icon 3" />
-                   <img class="image-community-icon" src="img/icon-community-1.svg" alt="Icon 4" style="width: 50px;" />
-                   <img class="image-community-icon" src="img/icon-community-2.svg" alt="Icon 5" style="width: 50px;" />
-                   <img class="image-community-icon" src="img/icon-community-3.svg" alt="Icon 6" style="width: 50px;" />
-                   <img class="image-community-icon" src="img/icon-community-4.svg" alt="Icon 7" style="width: 50px;" />
-                   <img class="image-community-icon" src="img/icon-community-5.svg" alt="Icon 8" style="width: 50px;" />
-                   <img class="image-community-icon" src="img/icon-community-6.svg" alt="Icon 9" style="width: 50px;" />
-                   <img class="image-community-icon" src="img/icon-community-7.svg" alt="Icon 10" style="width: 50px;" />
-                   <img class="image-community-icon" src="img/icon-community-8.svg" alt="Icon 10" style="width: 50px;" />
-                   <img class="image-community-icon" src="img/icon-community-9.svg" alt="Icon 10" style="width: 50px;" />
-                   <img class="image-community-icon" src="img/icon-community-10.svg" alt="Icon 10" style="width: 50px;" />
-                 </div>
-               </div>
- 
-               <!-- features-->
-               <!-- container 1 -->
-               <div class="col-md-2 col-6 p-0 people-container" style="background-color: white; min-height: 30vh; min-width: 300px;">
-                 <div class="d-flex flex-column align-items-center justify-content-top h-100 image-community">
-                   <div class="container">
-                     <div class="row">
-                       <div class="col-3 offset-0">
-                         <div class="macro-retangulo">
-                           <div class="micro-retangulo shadow" style="display: flex; align-items: center;">
-                             <div class="image-icon-micro-retangulo">
-                               <img src="img/new-icon.svg" style="width: 50px; height: 50px; margin-right: 10px;" />
-                             </div>
-                             <div class="ultimas-publicacoes">
-                               <p class="text-forum-title">últimas publicações</p>
-                               <p class="text-forum-subtitle" style="margin-top: 5px;">mais recentes</p>
-                             </div>
-                           </div>
-                           <div class="micro-retangulo shadow" style="display: flex; align-items: center;">
-                             <div class="image-icon-micro-retangulo">
-                               <img src="img/Popular-Icon.svg" style="width: 50px; height: 50px; margin-right: 10px;" />
-                             </div>
-                             <div class="ultimas-publicacoes">
-                               <p class="text-forum-title">Publicações populares</p>
-                               <p class="text-forum-subtitle" style="margin-top: 5px;">as mais populares dos fórum</p>
-                             </div>
-                           </div>
-                           <div class="micro-retangulo shadow" style="display: flex; align-items: center;">
-                             <div class="image-icon-micro-retangulo">
-                               <img src="img/Following-Icon.svg" style="width: 50px; height: 50px; margin-right: 10px;" />
-                             </div>
-                             <div class="ultimas-publicacoes">
-                               <p class="text-forum-title">Seguindo</p>
-                               <p class="text-forum-subtitle" style="margin-top: 5px;">veja publicações de amigos</p>
-                             </div>
-                           </div>
-                         </div>
-                       </div>
-                       <!-- container 2-->
-                       <div class="col-md-2 col-6 p-0 people-container" style="background-color: white; min-height: 30vh; min-width: 300px;">
-                         <div class="d-flex flex-column align-items-center justify-content-top h-100 image-community">
-                           <div class="container">
-                             <div class="row">
-                               <div class="col-3 offset-0">
-                                 <div class="macro-retangulo-container-2">
-                                   <div class="title-retangulo">
-                                     <p class="title-retangulo bold-text">Tags Populares</p>
-                                     <p></p>
-                                   </div>
- 
-                                   <div class="micro-retangulo shadow" style="display: flex; align-items: center;">
-                                     <div class="image-icon-micro-retangulo">
-                                       <img src="img/hashtag.svg" style="width: 50px; height: 50px; margin-right: 10px;" />
-                                     </div>
-                                     <div class="ultimas-publicacoes">
-                                       <p class="text-forum-title">#sustentabilidade</p>
-                                       <p class="text-forum-subtitle" style="margin-top: 5px;">45 postaram com essa tag</p>
-                                     </div>
-                                   </div>
-                                   <div class="micro-retangulo shadow" style="display: flex; align-items: center;">
-                                     <div class="image-icon-micro-retangulo">
-                                       <img src="img/hashtag.svg" style="width: 50px; height: 50px; margin-right: 10px;" />
-                                     </div>
-                                     <div class="ultimas-publicacoes">
-                                       <p class="text-forum-title">#schneidereletric</p>
-                                       <p class="text-forum-subtitle">38 postaram com essa tag</p>
-                                     </div>
-                                   </div>
-                                   <div class="micro-retangulo shadow" style="display: flex; align-items: center;">
-                                     <div class="image-icon-micro-retangulo">
-                                       <img src="img/hashtag.svg" style="width: 50px; height: 50px; margin-right: 10px;" />
-                                     </div>
-                                     <div class="ultimas-publicacoes">
-                                       <p class="text-forum-title">#maternidade</p>
-                                       <p class="text-forum-subtitle">22 postaram com essa tag</p>
-                                     </div>
-                                   </div>
-                                   <div class="micro-retangulo shadow" style="display: flex; align-items: center;">
-                                     <div class="image-icon-micro-retangulo">
-                                       <img src="img/hashtag.svg" style="width: 50px; height: 50px; margin-right: 10px;" />
-                                     </div>
-                                     <div class="ultimas-publicacoes">
-                                       <p class="text-forum-title">#emissãodecarbono</p>
-                                       <p class="text-forum-subtitle">20 postaram com essa tag</p>
-                                     </div>
-                                   </div>
-                                 </div>
-                               </div>
-                             </div>
-                           </div>
-                         </div>
-                       </div>
-                       <!-- container 3-->
-                       <div class="col-md-2 col-6 p-0 people-container" style="background-color: white; min-height: 30vh; min-width: 300px;">
-                         <div class="d-flex flex-column align-items-center justify-content-top h-100 image-community">
-                           <div class="container">
-                             <div class="row">
-                               <div class="col-3 offset-0">
-                                 <div class="macro-retangulo-container-3">
-                                   <div class="title-retangulo">
-                                     <p class="title-retangulo">Minhas Comunidades</p>
-                                     <p></p>
-                                   </div>
- 
-                                   <div class="micro-retangulo shadow" style="display: flex; align-items: center;">
-                                     <div class="image-icon-micro-retangulo">
-                                       <img src="img/communities-icon.svg" style="width: 50px; height: 50px; margin-right: 10px;" />
-                                     </div>
-                                     <div class="ultimas-publicacoes">
-                                       <p class="text-forum-title">Happy Hour Happy</p>
-                                       <p class="text-forum-subtitle" style="margin-top: 5px;">105 membros</p>
-                                     </div>
-                                   </div>
-                                   <div class="micro-retangulo shadow" style="display: flex; align-items: center;">
-                                     <div class="image-icon-micro-retangulo">
-                                       <img src="img/communities-icon.svg" style="width: 50px; height: 50px; margin-right: 10px;" />
-                                     </div>
-                                     <div class="ultimas-publicacoes">
-                                       <p class="text-forum-title">Marcas Sustentáveis</p>
-                                       <p class="text-forum-subtitle" style="margin-top: 5px;">289 membros</p>
-                                     </div>
-                                   </div>
-                                   <div class="micro-retangulo shadow" style="display: flex; align-items: center;">
-                                     <div class="image-icon-micro-retangulo justify-content-center align-items">
-                                       <img src="img/communities-icon.svg" style="width: 50px; height: 50px; margin-right: 10px;" />
-                                     </div>
-                                     <div class="ultimas-publicacoes">
-                                       <p class="text-forum-title">Cosméticos Vegan</p>
-                                       <p class="text-forum-subtitle" style="margin-top: 5px;">87 membros</p>
-                                     </div>
-                                   </div>
-                                 </div>
-                               </div>
-                             </div>
-                           </div>
-                         </div>
-                       </div>
-                     </div>
-                   </div>
-                 </div>
-               </div>
-             </div>
-           </div>
-         </div>
-       </div>
- 
-       <!-- Perguntas -->
-       <div class="col-md-9 col-12 mt-0 shadow" style="background-color: rgb(243, 243, 243);">
-         <div class="container mt-4">
-           <div class="col-lg-8 col-md-10 d-flex align-items-center">
-             <div class="col-lg-8 col-md-10">
-               <div class="d-flex align-items-center"></div>
-             </div>
-           </div>
-         </div>
- 
-         <!-- pesquisar 
-    <div class="container mt-4">
-       <div class="row justify-content-center">
-          <div class="col-lg-8 col-md-10">
-             <div class="input-group">
-                <input type="text" class="form-control" placeholder="Pesquisar por Post" />
-                <button class="btn btn-primar text-white">Buscar</button>
-             </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fórum</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/shared-items.css" />
+  <link rel="stylesheet" href="css/forum.css" />
+  <link rel="stylesheet" href="css/inicio.css" />
+  <link rel="stylesheet" href="css/drawer.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/my/plus.css" />
+  <link rel="icon" type="image/x-icon" href="img/SchneiderLogo.png" />
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <div class="overflow-hidden">
+
+    <!----------------------------------------------- nav bar --------------------------------------------------------------->
+    <nav class="remove">
+      <div class="d-flex justify-content-evenly">
+        <img src="img/schneider-logo.svg" alt="logo da schneider" />
+        <div class="d-flex align-items-center">
+          <input type="text" class="form-control bg-light"
+            placeholder="Pesquise por pessoas, desafios, assuntos & outros" aria-label="Example text with button addon"
+            aria-describedby="button-addon1" style="width: 30vw;" />
+          <button class="btn btn-secondary btn-outline" type="button" id="button-addon1">
+            <img src="img/search-button-icon.svg" alt="pesquisar" />
+          </button>
+        </div>
+        <div class="d-flex align-items-center gap-5">
+          <img src="img/message-icon.svg" alt="messagens" />
+          <img src="img/notification-icon.svg" alt="notificações" />
+        </div>
+        <div class="d-flex align-items-center">
+          <img src="img/joana-photo.svg" alt="foto de perfil" />
+          <p class="pt-3">Joana Ramos</p>
+          <a class="icons mx-2" href="login.html" style="width: 25px; height: 20px;">
+            <img class="img-fluid" src="img/open-new-window-2.png" style="width: 15px; height: 15px;"
+              alt="compartilhar postagem" />
+          </a>
+        </div>
+      </div>
+      <ul class="nav-bar-items">
+        <li><a href="index.html">Inicio</a></li>
+        <li class="active"><a href="forum.html">Fórum</a></li>
+        <li><a href="perfil.html">Perfil</a></li>
+        <li><a href="rank.html">Epower</a></li>
+        <li><a href="instituto.html">Fundação</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+    </nav>
+    <!----------------------------------------------- nav bar --------------------------------------------------------------->
+    <!-------------------------------Drawer Responsive----------------------------------------->
+    <nav class="navbar-mobile bg-light">
+      <nav class="navbar navbar-expand-lg bg-light fixed-top d-lg-none">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu"
+          aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation"
+          style="border: none; outline: none;">
+          <div class="navbar-menu-img">
+            <img src="img/navbar-menu2.svg" style="width: 20px;" alt="navbar menu" />
           </div>
-       </div>
-    </div> -->
- 
-         <!-- primeira publicação -->
-         <div id="publicacao1" class="row justify-content-center">
-           <div class="row justify-content-center">
-             <div class="row mt-4">
-               <div class="col-12 mb-1">
-                 <div
-                   class="card color-hover container-size text-forum shadow col-sm-12 col-md-8"
-                   style="width: 110vw; height: 100vh; width: 97%; height: 105%; border-radius: 4px; border: 1px #d2d2d2 solid; background-color: rgb(250, 250, 250);"
-                 >
-                   <div class="container">
-                     <div class="row no-gutters">
-                       <div class="col-12 col-sm-6 col-md-8">
-                         <div class="card-body">
-                           <div class="title-forum row align-items-center">
-                             <img src="img/new-post-icon.svg" style="width: 65px;" />
-                             <img src="img/moda-icon.svg" style="width: 65px;" />
-                             <p class="title-forum">Tenho curiosidade sobre a moda sustentável, você já teve alguma experiência positiva com marcas que seguem essa filosofia?</p>
-                           </div>
-                         </div>
-                         <div class="row comment-forum">
-                           <p>último comentário há dois minutos • publicado há 1 dia</p>
-                         </div>
-                       </div>
-                       <div class="col-6 col-md-4">
-                         <div class="comment-image">
-                           <img src="img/comments-forum.svg" />
-                         </div>
-                       </div>
-                     </div>
-                   </div>
-                 </div>
-               </div>
-             </div>
- 
-             <!-- Conteúdo Modal -->
-             <div class="modal fade" id="modalVazio" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-               <div class="modal-dialog modal-dialog-centered" role="document">
-                 <div class="modal-content">
-                   <p class="responder-post-modal">Responder a este Post</p>
-                   <input type="text" class="caixa-de-texto-modal" id="textoUsuario" name="textoUsuario" />
-                   <div class="row btn-dois">
-                     <button type="button" class="btn btn-comentar">Comentar</button>
-                     <button type="button" class="btn btn-cancelar" data-dismiss="modal">Cancelar</button>
-                   </div>
-                 </div>
-               </div>
-             </div>
- 
-             <!-- script -->
-             <script>
-               document.getElementById("publicacao1").addEventListener("click", function () {
-                 $("#modalVazio").modal("show");
-               });
-             </script>
- 
-             <!-- segunda publicação -->
-             <div class="row mt-4">
-               <div class="col-12 mb-1">
-                 <div
-                   class="card color-hover container-size-2 text-forum shadow col-sm-12 col-md-8"
-                   style="width: 110vw; height: 100vh; width: 97%; height: 105%; border-radius: 4px; border: 1px #d2d2d2 solid; background-color: rgb(250, 250, 250);"
-                 >
-                   <div class="container">
-                     <div class="row no-gutters">
-                       <div class="col-12 col-sm-6 col-md-8">
-                         <div class="card-body">
-                           <div class="title-forum row align-items-center">
-                             <img src="img/new-post-icon.svg" style="width: 65px;" />
-                             <img src="img/desperdicio-icon.svg" style="width: 100px;" />
-                             <p class="title-forum">Gostaria de compartilhar como reduzi o desperdício de alimentos na minha casa consideravelmente</p>
-                           </div>
-                         </div>
-                         <div class="row comment-forum">
-                           <p>último comentário há cinco horas • publicado há 1 dia</p>
-                         </div>
-                       </div>
-                       <div class="col-6 col-md-4">
-                         <div class="comment-image">
-                           <img src="img/commen-forum-2.svg" />
-                         </div>
-                       </div>
-                     </div>
-                   </div>
-                 </div>
-               </div>
- 
-               <!-- terceira publicação -->
-               <div class="row mt-4 sm-none">
-                 <div class="col-12 mb-1">
-                   <div class="card color-hover container-size text-forum shadow col-sm-12 col-md-8" style="width: 99%; height: 105%; border-radius: 4px; border: 1px #d2d2d2 solid; background-color: rgb(250, 250, 250);">
-                     <div class="container">
-                       <div class="row no-gutters">
-                         <div class="col-12 col-sm-6 col-md-8">
-                           <div class="card-body">
-                             <div class="title-forum row align-items-center">
-                               <img src="img/new-post-icon.svg" style="width: 65px;" />
-                               <img src="img/vegan-icon.svg" style="width: 75px;" />
-                               <p class="title-forum">Estive lendo sobre a redução do consumo de carne para promover a sustentabilidade. Alguma sugestão para tornar isso uma transição mais suave?</p>
-                             </div>
-                           </div>
-                           <div class="row comment-forum">
-                             <p>último comentário há 1 hora • publicado há 5 dias</p>
-                           </div>
-                         </div>
-                         <div class="col-6 col-md-4">
-                           <div class="comment-image">
-                             <img src="img/commen-forum-4.svg" />
-                           </div>
-                         </div>
-                       </div>
-                     </div>
-                   </div>
-                 </div>
- 
-                 <!-- quarta publicação -->
-                 <div class="row mt-4 sm-none">
-                   <div class="col-12 mb-1">
-                     <div
-                       class="card color-hover container-size text-forum shadow col-sm-12 col-md-8"
-                       style="width: 110vw; height: 100vh; width: 101%; height: 105%; border-radius: 4px; border: 1px #d2d2d2 solid; background-color: rgb(250, 250, 250);">
-                       <div class="container">
-                         <div class="row no-gutters">
-                           <div class="col-12 col-sm-6 col-md-8">
-                             <div class="card-body">
-                               <div class="title-forum row align-items-center">
-                                 <img src="img/sustentabilidade-icon.svg" style="width: 110px;" />
-                                 <p class="title-forum">Alguém já tentou criar um jardim sustentável em casa e poderia compartilhar dicas?</p>
-                               </div>
-                             </div>
-                             <div class="row comment-forum">
-                               <p>último comentário há 3 horas • publicado há 6 dias</p>
-                             </div>
-                           </div>
-                           <div class="col-6 col-md-4">
-                             <div class="comment-image">
-                               <img src="img/commen-forum-3.svg" />
-                             </div>
-                           </div>
-                         </div>
-                       </div>
-                     </div>
-                   </div>
-                 </div>
- 
-                 <!-- quinta publicação -->
-                 <div class="row mt-4 sm-none">
-                   <div class="col-12 mb-1">
-                     <div class="card color-hover container-size-5 text-forum shadow col-sm-12 col-md-8" 
-                           style="width: 101%; height: 105%; border-radius: 4px; border: 1px #d2d2d2 solid; background-color: rgb(250, 250, 250);">
-                       <div class="container">
-                         <div class="row no-gutters">
-                           <div class="col-12 col-sm-6 col-md-8">
-                             <div class="card-body">
-                               <div class="title-forum row align-items-center">
-                                 <img src="img/sustentabilidade-icon.svg" style="width: 110px;" />
-                                 <p class="title-forum">Gostaria de compartilhar como reduzi o desperdício de alimentos na minha casa consideravelmente</p>
-                               </div>
-                             </div>
-                             <div class="row comment-forum">
-                               <p>último comentário há 3 horas • publicado há 6 dias</p>
-                             </div>
-                           </div>
-                           <div class="col-6 col-md-4">
-                             <div class="comment-image">
-                               <img src="img/commen-5.svg" />
-                             </div>
-                           </div>
-                         </div>
-                       </div>
-                     </div>
-                   </div>
-                 </div>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarMenu">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="forum.html">Forum</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="perfil.html">Perfil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="rank.html">Epower</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="instituto.html">Fundação</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="faq.html">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Logout</a>
+            </li>
+          </ul>
+        </div>
+        <a class="navbar-brand text-white d-flex align-items-center" href="#!">
+          <div class="imagem-joana">
+            <div class="super-container-drawer">
+              <img src="img/joana-photo.svg" />
+            </div>
+          </div>
+          <span class="nome-joana text-black">Joana Ramos</span>
+        </a>
+      </nav>
+    </nav>
+    <!-----------------------------END Drawer Responsive----------------------------------------->
 
-                 <!-- criar um post no fórum -->
-                 <div class="input-group-criar-post">
-                   <input type="text" class="responder-post shadow" placeholder="    Criar um Post nesse fórum" />
-                 </div>
-               </div>
-             </div>
-           </div>
-         </div>
-       </div>
-     </div>
-   </div>
+    <!-- Web -->
+
+    <!-- comunidades -->
+    <div class="row">
+      <div class="col">
+        <!-- <div class="macrocontainer row d-none d-md-block"> -->
+        <div class="macrocontainer">
+          <div class="container-community" style="background-color: white;">
+            <div class="row no-gutters">
+              <div class="col-md-1 col-3 p-3 community-container"
+                style="background-color: #0d291c; min-height: 100vh; min-width: 30px;">
+                <div class="d-flex flex-column align-items-center justify-content-top h-100 image-community">
+                  <img class="image-community-icon" src="img/rank/icon1.svg" alt="Icon 1" />
+                  <img class="image-community-icon" src="img/rank/icon2.svg" alt="Icon 2" />
+                  <img class="image-community-icon" src="img/rank/icon3.svg" alt="Icon 3" />
+                  <img class="image-community-icon" src="img/icon-community-1.svg" alt="Icon 4" style="width: 50px;" />
+                  <img class="image-community-icon" src="img/icon-community-2.svg" alt="Icon 5" style="width: 50px;" />
+                  <img class="image-community-icon" src="img/icon-community-3.svg" alt="Icon 6" style="width: 50px;" />
+                  <img class="image-community-icon" src="img/icon-community-4.svg" alt="Icon 7" style="width: 50px;" />
+                  <img class="image-community-icon" src="img/icon-community-5.svg" alt="Icon 8" style="width: 50px;" />
+                  <img class="image-community-icon" src="img/icon-community-6.svg" alt="Icon 9" style="width: 50px;" />
+                  <img class="image-community-icon" src="img/icon-community-7.svg" alt="Icon 10" style="width: 50px;" />
+                  <img class="image-community-icon" src="img/icon-community-8.svg" alt="Icon 10" style="width: 50px;" />
+                  <img class="image-community-icon" src="img/icon-community-9.svg" alt="Icon 10" style="width: 50px;" />
+                  <img class="image-community-icon" src="img/icon-community-10.svg" alt="Icon 10"
+                    style="width: 50px;" />
+                </div>
+              </div>
+
+              <!-- features-->
+              <!-- container 1 -->
+              <div class="col-md-2 col-6 p-0 people-container"
+                style="background-color: white; min-height: 30vh; min-width: 300px;">
+                <div class="d-flex flex-column align-items-center justify-content-top h-100 image-community">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-3 offset-0">
+                        <div class="macro-retangulo">
+                          <div class="micro-retangulo shadow" style="display: flex; align-items: center;">
+                            <div class="image-icon-micro-retangulo">
+                              <img src="img/new-icon.svg" style="width: 50px; height: 50px; margin-right: 10px;" />
+                            </div>
+                            <div class="ultimas-publicacoes">
+                              <p class="text-forum-title">últimas publicações</p>
+                              <p class="text-forum-subtitle" style="margin-top: 5px;">mais recentes</p>
+                            </div>
+                          </div>
+                          <div class="micro-retangulo shadow" style="display: flex; align-items: center;">
+                            <div class="image-icon-micro-retangulo">
+                              <img src="img/Popular-Icon.svg" style="width: 50px; height: 50px; margin-right: 10px;" />
+                            </div>
+                            <div class="ultimas-publicacoes">
+                              <p class="text-forum-title">Publicações populares</p>
+                              <p class="text-forum-subtitle" style="margin-top: 5px;">as mais populares dos fórum</p>
+                            </div>
+                          </div>
+                          <div class="micro-retangulo shadow" style="display: flex; align-items: center;">
+                            <div class="image-icon-micro-retangulo">
+                              <img src="img/Following-Icon.svg"
+                                style="width: 50px; height: 50px; margin-right: 10px;" />
+                            </div>
+                            <div class="ultimas-publicacoes">
+                              <p class="text-forum-title">Seguindo</p>
+                              <p class="text-forum-subtitle" style="margin-top: 5px;">veja publicações de amigos</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- container 2-->
+                      <div class="col-md-2 col-6 p-0 people-container"
+                        style="background-color: white; min-height: 30vh; min-width: 300px;">
+                        <div class="d-flex flex-column align-items-center justify-content-top h-100 image-community">
+                          <div class="container">
+                            <div class="row">
+                              <div class="col-3 offset-0">
+                                <div class="macro-retangulo-container-2">
+                                  <div class="title-retangulo">
+                                    <p class="title-retangulo bold-text">Tags Populares</p>
+                                    <p></p>
+                                  </div>
+
+                                  <div class="micro-retangulo shadow" style="display: flex; align-items: center;">
+                                    <div class="image-icon-micro-retangulo">
+                                      <img src="img/hashtag.svg"
+                                        style="width: 50px; height: 50px; margin-right: 10px;" />
+                                    </div>
+                                    <div class="ultimas-publicacoes">
+                                      <p class="text-forum-title">#sustentabilidade</p>
+                                      <p class="text-forum-subtitle" style="margin-top: 5px;">45 postaram com essa tag
+                                      </p>
+                                    </div>
+                                  </div>
+                                  <div class="micro-retangulo shadow" style="display: flex; align-items: center;">
+                                    <div class="image-icon-micro-retangulo">
+                                      <img src="img/hashtag.svg"
+                                        style="width: 50px; height: 50px; margin-right: 10px;" />
+                                    </div>
+                                    <div class="ultimas-publicacoes">
+                                      <p class="text-forum-title">#schneidereletric</p>
+                                      <p class="text-forum-subtitle">38 postaram com essa tag</p>
+                                    </div>
+                                  </div>
+                                  <div class="micro-retangulo shadow" style="display: flex; align-items: center;">
+                                    <div class="image-icon-micro-retangulo">
+                                      <img src="img/hashtag.svg"
+                                        style="width: 50px; height: 50px; margin-right: 10px;" />
+                                    </div>
+                                    <div class="ultimas-publicacoes">
+                                      <p class="text-forum-title">#maternidade</p>
+                                      <p class="text-forum-subtitle">22 postaram com essa tag</p>
+                                    </div>
+                                  </div>
+                                  <div class="micro-retangulo shadow" style="display: flex; align-items: center;">
+                                    <div class="image-icon-micro-retangulo">
+                                      <img src="img/hashtag.svg"
+                                        style="width: 50px; height: 50px; margin-right: 10px;" />
+                                    </div>
+                                    <div class="ultimas-publicacoes">
+                                      <p class="text-forum-title">#emissãodecarbono</p>
+                                      <p class="text-forum-subtitle">20 postaram com essa tag</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- container 3-->
+                      <div class="col-md-2 col-6 p-0 people-container"
+                        style="background-color: white; min-height: 30vh; min-width: 300px;">
+                        <div class="d-flex flex-column align-items-center justify-content-top h-100 image-community">
+                          <div class="container">
+                            <div class="row">
+                              <div class="col-3 offset-0">
+                                <div class="macro-retangulo-container-3">
+                                  <div class="title-retangulo">
+                                    <p class="title-retangulo">Minhas Comunidades</p>
+                                    <p></p>
+                                  </div>
+
+                                  <div class="micro-retangulo shadow" style="display: flex; align-items: center;">
+                                    <div class="image-icon-micro-retangulo">
+                                      <img src="img/communities-icon.svg"
+                                        style="width: 50px; height: 50px; margin-right: 10px;" />
+                                    </div>
+                                    <div class="ultimas-publicacoes">
+                                      <p class="text-forum-title">Happy Hour Happy</p>
+                                      <p class="text-forum-subtitle" style="margin-top: 5px;">105 membros</p>
+                                    </div>
+                                  </div>
+                                  <div class="micro-retangulo shadow" style="display: flex; align-items: center;">
+                                    <div class="image-icon-micro-retangulo">
+                                      <img src="img/communities-icon.svg"
+                                        style="width: 50px; height: 50px; margin-right: 10px;" />
+                                    </div>
+                                    <div class="ultimas-publicacoes">
+                                      <p class="text-forum-title">Marcas Sustentáveis</p>
+                                      <p class="text-forum-subtitle" style="margin-top: 5px;">289 membros</p>
+                                    </div>
+                                  </div>
+                                  <div class="micro-retangulo shadow" style="display: flex; align-items: center;">
+                                    <div class="image-icon-micro-retangulo justify-content-center align-items">
+                                      <img src="img/communities-icon.svg"
+                                        style="width: 50px; height: 50px; margin-right: 10px;" />
+                                    </div>
+                                    <div class="ultimas-publicacoes">
+                                      <p class="text-forum-title">Cosméticos Vegan</p>
+                                      <p class="text-forum-subtitle" style="margin-top: 5px;">87 membros</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Perguntas -->
+      <div class="col-md-9 shadow" style="background-color: rgb(243, 243, 243);">
+        <div class="col-lg-8 col-md-10">
+        </div>
+
+        <!-- primeira publicação -->
+        <div id="publicacao1" class="row justify-content-center">
+          <div class="row justify-content-center">
+            <div class="row mt-4">
+              <div class="col-12 mb-1">
+                <div class="card color-hover container-size-2 text-forum shadow col-sm-12 col-md-8"
+                  style="width: 97%; height: 100%; border-radius: 4px; border: 1px #d2d2d2 solid; background-color: rgb(250, 250, 250);">
+                  <div class="container">
+                    <div class="row no-gutters">
+                      <div class="col-12 col-sm-6 col-md-8">
+                        <div class="card-body">
+                          <div class="title-forum row align-items-center">
+                            <img src="img/new-post-icon.svg" style="width: 65px;" />
+                            <img src="img/moda-icon.svg" style="width: 65px;" />
+                            <p class="title-forum">Tenho curiosidade sobre a moda sustentável, você já teve alguma
+                              experiência positiva com marcas que seguem essa filosofia?</p>
+                          </div>
+                        </div>
+                        <div class="row comment-forum">
+                          <p>último comentário há dois minutos • publicado há 1 dia</p>
+                        </div>
+                      </div>
+                      <div class="col-6 col-md-4">
+                        <div class="comment-image">
+                          <img src="img/comments-forum.svg" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Conteúdo Modal -->
+            <div class="modal fade" id="modalVazio" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <p class="responder-post-modal">Responder a este Post</p>
+                  <input type="text" class="caixa-de-texto-modal" id="textoUsuario" name="textoUsuario" />
+                  <div class="row btn-dois">
+                    <button type="button" class="btn btn-comentar">Comentar</button>
+                    <button type="button" class="btn btn-cancelar" data-dismiss="modal">Cancelar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- script -->
+            <script>
+              document.getElementById("publicacao1").addEventListener("click", function () {
+                $("#modalVazio").modal("show");
+              });
+            </script>
+
+            <!-- segunda publicação -->
+            <div class="row mt-4">
+              <div class="col-12 mb-1">
+                <div class="card color-hover container-size-2 text-forum shadow col-sm-12 col-md-8"
+                  style="width: 97%; height: 100%; border-radius: 4px; border: 1px #d2d2d2 solid; background-color: rgb(250, 250, 250);">
+                  <div class="container">
+                    <div class="row no-gutters">
+                      <div class="col-12 col-sm-6 col-md-8">
+                        <div class="card-body">
+                          <div class="title-forum row align-items-center">
+                            <img src="img/new-post-icon.svg" style="width: 65px;" />
+                            <img src="img/desperdicio-icon.svg" style="width: 100px;" />
+                            <p class="title-forum">Gostaria de compartilhar como reduzi o desperdício de alimentos na
+                              minha casa consideravelmente</p>
+                          </div>
+                        </div>
+                        <div class="row comment-forum">
+                          <p>último comentário há cinco horas • publicado há 1 dia</p>
+                        </div>
+                      </div>
+                      <div class="col-6 col-md-4">
+                        <div class="comment-image">
+                          <img src="img/commen-forum-2.svg" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+                <!-- criar um post no fórum -->
+                <div class="input-group-criar-post">
+                  <input type="text" class="responder-post shadow" placeholder="    Criar um Post nesse fórum" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
-<!-- MOBILE 
+  <!-- MOBILE 
    <div class="container d-block d-md-none sm-none">
    <div class="row mt-4 dm-none">
       <div class="col-12 mb-1">
@@ -680,5 +596,5 @@
             }
          }
       </style> -->
-   
- </body>
+
+</body>
