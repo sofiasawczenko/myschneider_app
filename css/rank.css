@@ -1,9 +1,20 @@
-.body {
-  width: 1000px;
+@media (max-width: 767px) {
+  .navbar-mobile {
+      padding: 40px; /* Adiciona 40 pixels de espaço ao redor da nav em mobile */
+  }
 }
+.body {
+  width: 100%;
+}
+
+.nav-link:hover {
+  color: #3DCD58;
+}
+
 .background-color {
   background-color: #f8f8f8;
 }
+
 .text-schneider-color {
   color: #3DCD58
 }
@@ -29,16 +40,16 @@
   background-color: white;
   align-items: center; 
   border-radius: 5px;
+}
 
-  @media screen and (max-width: 1000px) {
-    margin-top: 2%;
-    margin-left: 8%;
-    width: 81%;
+@media (max-width: 500px) {
+  .rank-headerorganize{
+    width: 10%;
     height: 1250px;
-    margin-bottom: 10%;
-
   }
 }
+
+
 
 .rank-profile-background {
   width: 100%;
@@ -326,11 +337,8 @@
   margin: 10px;
   background-color: white;
   border-radius: 5px;
-
-  @media (max-width: 1000px) {
-    width: 90%;
-  }
 }
+
 
 .dados-subcontainer-2 {
   display: flex;
@@ -398,11 +406,10 @@
   margin: 10px;
   background-color: rgb(255, 255, 255);
   border-radius: 5px;
-
-  @media (max-width: 1000px) {
-    width: 90%;
-  }
 }
+
+ 
+
 
 .competition-container {
   width: 60%;
@@ -659,16 +666,15 @@
   background-color: rgb(255, 255, 255);
   border-radius: 5px;
 
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 500px) {
       margin-top: 2%;
       margin-left: 8%;
-      width: 81%;
+      width: 85%;
       height: 400px;
       margin-bottom: 10%;
 
     }
   }
-
 
 .competitions-subcontainer {
   display: flex;

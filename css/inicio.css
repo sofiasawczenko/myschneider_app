@@ -1,3 +1,9 @@
+@media (max-width: 767px) {
+  .navbar-mobile {
+      padding: 40px; /* Adiciona 40 pixels de espaço ao redor da nav em mobile */
+  }
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -5,13 +11,26 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.destaques-word {
+  font-family: 'Varela Round', Arial, Helvetica, sans-serif;
+  font-size: larger;
+  margin-top: 5%;
+  color: #3DCD58;
+}
+
+
 body {
   background-color: #f9f9f9;
+}
+
+.text-secondary:hover {
+    background-color: #cbcbcb;
 }
 
 
 .bg-light-gray {
   background-color: #f1f1f1;
+  border: 0.5px solid #ccc;
 }
 
 .text-color-green-xp {
@@ -59,4 +78,15 @@ body {
   background-color: #3DCD58;
   cursor: pointer;
   transition: 0.5s;
+}
+
+.options-category-spacing {
+  margin: 20%;
+  padding:20%
+}
+
+/* Defina um tamanho personalizado para a imagem */
+.image-fit {
+  width: 100%; /* Ajuste o valor conforme necessário */
+  height: 80%; /* Isso garante que a altura seja ajustada proporcionalmente à largura */
 }

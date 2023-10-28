@@ -4,6 +4,9 @@
     }
 }
 
+.nav-link:hover {
+    color: #3DCD58;
+  }
 
 .community-container{
     margin-left: 0;
@@ -23,6 +26,7 @@
 .message-container {
     width: 30%
 }
+
 
 .people-text {
     font-family: 'Varela Round', Arial, Helvetica, sans-serif;
@@ -106,13 +110,14 @@
 }
 
 .responder-post {
-    width: 85%;
-    margin-left: 6%;
+    width: 90%;
     height: 48px;
     border-radius: 3px;
     border: 0.5px solid rgb(171, 171, 171);
     background-color: rgb(242, 242, 242);
-    font-family: Arial, Helvetica, sans-serif
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20%;
+    margin-left: 3%;
 
 }
 
@@ -120,7 +125,8 @@
     .responder-post {
       margin-top: 10%;
       margin-bottom: 10%;
-      width: 100%; 
+      margin-left: 8%;
+      width: 80%; 
       height: 40px;
       background-color: #ffffff;
     }
@@ -435,5 +441,21 @@
 @media (max-width: 410px) {
     .dm-none {
         display: block; /* Torna o elemento visível em telas menores */
+    }
+}
+
+.carregar-mais-text {
+    font-size: small;
+    text-decoration: underline;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(75, 75, 75);
+    margin-left: 30%;
+    padding-top: 5%;
+    
+}
+
+@media (min-width: 700px) {
+    .carregar-mais-text{
+        margin-left: 80%;
     }
 }

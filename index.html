@@ -10,6 +10,7 @@
       <link rel="stylesheet" href="css/shared-items.css" />
       <link rel="stylesheet" href="css/drawer.css" />
       <link rel="stylesheet" href="css/instituto.css" />
+      <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&family=Roboto:wght@400;700&family=Varela+Round&display=swap" rel="stylesheet" />
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/css/bootstrap.min.css" rel="stylesheet" />
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
@@ -113,7 +114,46 @@
             <li data-bs-target="#myCarousel" data-bs-slide-to="3"></li>
          </ol>
 
+
          <div class="carousel-inner">
+            <div class="carousel-item active">
+                <!-- Imagem para Web (largura máxima: 100% da largura da tela, altura máxima: 60vh) -->
+                <img src="img/banner-1.png" class="d-none d-md-block w-100 image-fit-web" alt="Imagem 1 Web" />
+    
+                <!-- Imagem para Mobile (largura máxima: 100% da largura da tela, altura máxima: 30vh) -->
+                <img src="img/banner-1-mobile.png" class="d-block d-md-none w-100 image-fit-mobile" alt="Imagem 1 Mobile" />
+            </div>
+            <div class="carousel-item">
+                <!-- Imagem para Web (largura máxima: 100% da largura da tela, altura máxima: 60vh) -->
+                <img src="img/banner-2.png" class="d-none d-md-block w-100 image-fit-web" alt="Imagem 1 Web" />
+    
+                <!-- Imagem para Mobile (largura máxima: 100% da largura da tela, altura máxima: 30vh) -->
+                <img src="img/banner-2-mobile.png" class="d-block d-md-none w-100 image-fit-mobile" alt="Imagem 1 Mobile" />
+            </div>
+            <div class="carousel-item">
+                <!-- Imagem para Web (largura máxima: 100% da largura da tela, altura máxima: 60vh) -->
+                <img src="img/banner-3.png" class="d-none d-md-block w-100 image-fit-web" alt="Imagem 1 Web" />
+    
+                <!-- Imagem para Mobile (largura máxima: 100% da largura da tela, altura máxima: 30vh) -->
+                <img src="img/banner-3-mobile.png" class="d-block d-md-none w-100 image-fit-mobile" alt="Imagem 1 Mobile" />
+            </div>
+        </div>
+
+        <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
+         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+         <span class="visually-hidden">Anterior</span>
+     </a>
+     <a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
+         <span class="carousel-control-next-icon" aria-hidden="true"></span>
+         <span class="visually-hidden">Próximo</span>
+     </a>
+   </div>
+
+
+
+
+
+        <!-- <div class="carousel-inner" style="width: 100%; height: 100%"">
             <div class="carousel-item active">
                <img src="img/banner-1.png" class="d-block w-100 image-fit" alt="Imagem 1" />
             </div>
@@ -136,45 +176,42 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Próximo</span>
          </a>
-      </div>
+      </div> -->
+
+
+
+
+
+
+
 
       <div class="d-flex flex-column gap-2 align-items-center mt-5">
          <div class="d-flex justify-content-center flex-wrap">
-           <span class="bg-light-gray py-2 px-3 rounded options-category" onclick="alert('WIP: WORK IN PROGRESS')">Dicas</span>
+           <span class="bg-light-gray py-2 px-3 rounded options-category" style="margin-bottom: 1%" onclick="alert('WIP: WORK IN PROGRESS')">Dicas</span>
            <div style="width: 5px;"></div>
-           <span class="bg-light-gray py-2 px-3 rounded options-category" onclick="alert('WIP: WORK IN PROGRESS')">Compostagem</span>
+           <span class="bg-light-gray py-2 px-3 rounded options-category" style="margin-bottom: 1%" onclick="alert('WIP: WORK IN PROGRESS')">Compostagem</span>
            <div style="width: 5px;"></div>
-           <span class="bg-light-gray py-2 px-3 rounded options-category" onclick="alert('WIP: WORK IN PROGRESS')">IoT</span>
+           <span class="bg-light-gray py-2 px-3 rounded options-category" style="margin-bottom: 1%" onclick="alert('WIP: WORK IN PROGRESS')">IoT</span>
            <div style="width: 5px;"></div>
-           <span class="bg-light-gray py-2 px-3 rounded options-category" onclick="alert('WIP: WORK IN PROGRESS')">Mobilidade elétrica</span>
+           <span class="bg-light-gray py-2 px-3 rounded options-category" style="margin-bottom: 1%" onclick="alert('WIP: WORK IN PROGRESS')">Mobilidade</span>
            <div style="width: 5px;"></div>
-           <span class="bg-light-gray py-2 px-3 rounded options-category" onclick="alert('WIP: WORK IN PROGRESS')">Inteligência Artificial</span>
+           <span class="bg-light-gray py-2 px-3 rounded options-category" style="margin-bottom: 1%" onclick="alert('WIP: WORK IN PROGRESS')">IA</span>
            <div style="width: 5px;"></div>
-           <span class="bg-light-gray py-2 px-3 rounded options-category" onclick="alert('WIP: WORK IN PROGRESS')">Tecnologias verdes</span>
+           <span class="bg-light-gray py-2 px-3 rounded options-category" style="margin-bottom: 1%" onclick="alert('WIP: WORK IN PROGRESS')">Tecnologias verdes</span>
            <div style="width: 5px;"></div>
-           <span class="bg-light-gray py-2 px-3 rounded options-category" onclick="alert('WIP: WORK IN PROGRESS')">Cidades Inteligentes</span>
+           <span class="bg-light-gray py-2 px-3 rounded options-category" style="margin-bottom: 1%" onclick="alert('WIP: WORK IN PROGRESS')">Cidades Inteligentes</span>
            <div style="width: 5px;"></div>
-           <span class="bg-light-gray py-2 px-3 rounded options-category" onclick="alert('WIP: WORK IN PROGRESS')">Energia eólica</span>
            <div style="width: 5px;"></div>
-           <span class="bg-light-gray py-2 px-3 rounded options-category" onclick="alert('WIP: WORK IN PROGRESS')">Mobilidade</span>
-         </div>
-       
-         <div class="d-flex justify-content-center flex-wrap">
-           <span class="bg-light-gray py-2 px-3 rounded options-category" onclick="alert('WIP: WORK IN PROGRESS')">Energias renováveis</span>
+           <span class="bg-light-gray py-2 px-3 rounded options-category" style="margin-bottom: 1%" onclick="alert('WIP: WORK IN PROGRESS')">Sustentabilidade</span>
            <div style="width: 5px;"></div>
-           <span class="bg-light-gray py-2 px-3 rounded options-category" onclick="alert('WIP: WORK IN PROGRESS')">Sustentabilidade</span>
+           <span class="bg-light-gray py-2 px-3 rounded options-category" style="margin-bottom: 1%" onclick="alert('WIP: WORK IN PROGRESS')">Agricultura Sustentável</span>
            <div style="width: 5px;"></div>
-           <span class="bg-light-gray py-2 px-3 rounded options-category" onclick="alert('WIP: WORK IN PROGRESS')">Agricultura Sustentável</span>
+           <span class="bg-light-gray py-2 px-3 rounded options-category" style="margin-bottom: 1%" onclick="alert('WIP: WORK IN PROGRESS')">Lixo</span>
            <div style="width: 5px;"></div>
-           <span class="bg-light-gray py-2 px-3 rounded options-category" onclick="alert('WIP: WORK IN PROGRESS')">Lixo</span>
+           <span class="bg-light-gray py-2 px-3 rounded options-category" style="margin-bottom: 1%" onclick="alert('WIP: WORK IN PROGRESS')">Reutilização</span>
            <div style="width: 5px;"></div>
-           <span class="bg-light-gray py-2 px-3 rounded options-category" onclick="alert('WIP: WORK IN PROGRESS')">Reutilização</span>
            <div style="width: 5px;"></div>
-           <span class="bg-light-gray py-2 px-3 rounded options-category" onclick="alert('WIP: WORK IN PROGRESS')">Fauna&Flora</span>
            <div style="width: 5px;"></div>
-           <span class="bg-light-gray py-2 px-3 rounded options-category" onclick="alert('WIP: WORK IN PROGRESS')">Receitas</span>
-           <div style="width: 5px;"></div>
-           <span class="py-2 px-3 rounded options-category" style="background-color: #3dcd58;">Ver Tudo</span>
          </div>
        
          <hr class="divider" style="width: 80%;" />
@@ -194,27 +231,29 @@
          <div class="container">
             <div class="row">
                <div class="col d-flex flex-column gap-3">
-                  <div class="bg-white d-flex flex-column justify-content-center align-items-center py-3 border rounded">
+                  <div class="bg-white d-flex flex-column justify-content-center align-items-center py-3 border rounded shadow">
                      <p class="h4">Joana Ramos</p>
                      <p class="h6 text-secondary">Estagiária de RH</p>
                      <hr style="width: 80%; height: 2px;" class="text-color-green-xp" />
                      <p class="text-color-green-xp" id="pontos-adquiridos"></p>
                   </div>
-                  <div class="bg-white px-4 py-2 border rounded">
+                  
+                  <div class="bg-white px-4 py-2 border rounded" style="margin-bottom: 3%;">
                      <span>
+                        <div class="text-center">
                         <small><a href="" class="text-secondary">Histórico de perguntas</a></small>
                         <small onclick="alert('WIP: WORK IN PROGRESS')"><a href="" class="text-secondary">Convidar Colegas</a></small>
                         <small onclick="alert('WIP: WORK IN PROGRESS')"><a href="" class="text-secondary">Fórum</a></small>
                         <small onclick="alert('WIP: WORK IN PROGRESS')"><a href="" class="text-secondary">FAQ</a></small>
-                     </span>
-                     <span>
                         <small onclick="alert('WIP: WORK IN PROGRESS')"> <a href="" class="text-secondary">Métricas</a></small>
                         <small onclick="alert('WIP: WORK IN PROGRESS')"> <a href="" class="text-secondary">Ranking</a></small>
                         <small onclick="alert('WIP: WORK IN PROGRESS')"> <a href="" class="text-secondary">Perfil</a></small>
                         <small onclick="alert('WIP: WORK IN PROGRESS')"> <a href="" class="text-secondary">Editar</a></small>
                      </span>
                   </div>
+                  </div>
                </div>
+
                <div class="col-12 col-md-6 d-flex flex-column gap-3" id="publish-container">
                   <div class="d-flex bg-white border px-3 py-4 gap-3 rounded">
                      <img src="/img/joana-photo.svg" alt="foto de perfil" />
@@ -274,10 +313,10 @@
                   </div>
                </div>
                <div class="col d-flex flex-column align-items-center gap-3">
-                  <p><strong>Destaques</strong></p>
-                  <img src="https://source.unsplash.com/random/300%C3%97300/?nature" class="img-fluid rounded" alt="random image" role="button" onclick="alert('WIP: WORK IN PROGRESS')" title="Postagem em destaque" />
-                  <img src="https://source.unsplash.com/random/300%C3%97301/?nature" class="img-fluid rounded" alt="random image" role="button" onclick="alert('WIP: WORK IN PROGRESS')" title="Postagem em destaque" />
-                  <img src="https://source.unsplash.com/random/300%C3%97302/?nature" class="img-fluid rounded" alt="random image" role="button" onclick="alert('WIP: WORK IN PROGRESS')" title="Postagem em destaque" />
+                  <p class="destaques-word">Destaques</p>
+                  <img src="https://source.unsplash.com/random/300%C3%97300/?nature" class="img-fluid rounded shadow" alt="random image" role="button" onclick="alert('WIP: WORK IN PROGRESS')" title="Postagem em destaque" />
+                  <img src="https://source.unsplash.com/random/300%C3%97301/?nature" class="img-fluid rounded shadow" alt="random image" role="button" onclick="alert('WIP: WORK IN PROGRESS')" title="Postagem em destaque" />
+                  <img src="https://source.unsplash.com/random/300%C3%97302/?nature" class="img-fluid rounded shadow" alt="random image" role="button" onclick="alert('WIP: WORK IN PROGRESS')" title="Postagem em destaque" />
                </div>
             </div>
          </div>

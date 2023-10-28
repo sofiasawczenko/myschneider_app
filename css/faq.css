@@ -1,3 +1,9 @@
+@media (max-width: 767px) {
+  .navbar-mobile {
+      padding: 40px; /* Adiciona 40 pixels de espaço ao redor da nav em mobile */
+  }
+}
+
 * {
   font-family: "Varela Round", Arial, Helvetica, sans-serif;
 }
@@ -19,6 +25,7 @@
 
 .text-schneider-color {
   color: #3dcd58;
+  font-size: large;
 }
 
 .text-white {
