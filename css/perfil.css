@@ -23,8 +23,6 @@
   color: #8F8F8F;
 }
 
-/* Main */
-
 .imgremove{
   display: block;
   @media (max-width: 1000px) {
