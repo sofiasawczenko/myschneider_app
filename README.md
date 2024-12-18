@@ -7,8 +7,10 @@ To provide a sustainable approach to motivate Schneider employees through engagi
 ## How to Install the Project
 
 Clone this repository to your local environment.
-bash
+
+```bash
 git clone https://github.com/sofiasawczenko/myschneider_website
+```
 
 ## Technologies Used
 
