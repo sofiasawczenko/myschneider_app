@@ -1,26 +1,18 @@
-# CHALLENGER SCHNEIDER FIAP
+# Schneider Eletric website for employees
 
-Apresentamos o nosso website MySchneider.
+To provide a sustainable approach to motivate Schneider employees through engaging initiatives.
+- Check it out: https://myschneider-website.vercel.app
+  
+## How to Install the Project
 
-### Como instalar o projeto
-
-Clone este repositório para seu ambiente local.
-
-```
+Clone this repository to your local environment.
+bash
 git clone https://github.com/sofiasawczenko/myschneider_website
-```
 
-# Tecnologias 
+## Technologies Used
 
 - HTML
 - CSS
-- JS
+- JavaScript
 - Bootstrap
 
-### Objetivo
-
-Proporcionar uma abordagem sustentável para motivar os colaboradores da Schneider através de iniciativas animadoras.
-
-### Futuro
-
-No futuro, há um plano para introduzir uma funcionalidade empolgante chamada "Duelo de Perguntas". Essa funcionalidade permitirá que os funcionários participem de desafios de perguntas e respostas, seja individualmente ou em grupo. O principal objetivo é promover a interação entre os membros da equipe e o desenvolvimento do conhecimento de uma maneira divertida e engajadora.
